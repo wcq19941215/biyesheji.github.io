@@ -1,0 +1,28 @@
+1、绑定用户
+$ git config --global user.name "Your Name" 
+$ git config --global user.email "email@example.com"
+2、配置ssh
+$ ssh-keygen -t rsa -C "1366901050@qq.com"
+3、测试ssh
+$ ssh -T git@github.com
+4、克隆仓库到本地
+$ git clone git@github.com:wcq19941215/biyesheji.github.io.git
+
+5、初始化仓库
+$ git init
+
+6、上传README文件
+$ git init
+$ touch README.md
+$ git add README.md
+$ git commit -m 'first_commit'
+$ git remote add origin git@github.com:wcq19941215/biyesheji.github.io.git
+$ git push origin master
+
+7、上传项目、文件、文件夹
+$ git add . 
+$ git commit -m 'first_commit'
+$ git remote add origin git@github.com:wcq19941215/biyesheji.github.io.git   
+（如果错误  git remote rm origin）
+$ git push -u origin master
+（如果错误  git pull origin master）
