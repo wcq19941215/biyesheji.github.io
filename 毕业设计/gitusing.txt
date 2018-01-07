@@ -26,3 +26,9 @@ $ git remote add origin git@github.com:wcq19941215/biyesheji.github.io.git
 （如果错误  git remote rm origin）
 $ git push -u origin master
 （如果错误  git pull origin master）
+
+
+下载项目
+$ git init
+
+$ git pull git@github.com:wcq19941215/biyesheji.github.io.git
