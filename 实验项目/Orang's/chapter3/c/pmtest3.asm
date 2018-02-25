@@ -29,7 +29,7 @@ GdtPtr		dw	GdtLen - 1	; GDT界限
 SelectorNormal		equ	LABEL_DESC_NORMAL	- LABEL_GDT
 SelectorCode32		equ	LABEL_DESC_CODE32	- LABEL_GDT
 SelectorCode16		equ	LABEL_DESC_CODE16	- LABEL_GDT
-SelectorData		equ	LABEL_DESC_DATA		- LABEL_GDT
+SelectorData		equ	LABEL_DESC_DATA		- LABEL_GDT+SA_RPL3
 SelectorStack		equ	LABEL_DESC_STACK	- LABEL_GDT
 SelectorLDT		equ	LABEL_DESC_LDT		- LABEL_GDT
 SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT

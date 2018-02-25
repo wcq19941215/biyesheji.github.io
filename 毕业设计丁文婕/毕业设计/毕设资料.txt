@@ -1,0 +1,47 @@
+http://www.php.cn/course/229.html 
+PHP教程
+
+http://bbs.sdbeta.com/read-htm-tid-548106.html
+PHP STORM安装
+
+https://www.cnblogs.com/tangpanpan23/articles/3478005.html 
+基于php开发的网上商城
+
+http://www.php.cn/course/229.html 
+PHP教程
+
+www.wcqwolflow.com  王超群的博客
+
+http://cite.readpaul.com/ 参考文献格式生成器
+
+
+
+
+http://www.xzbu.com  论文网（免费论文网站）
+#####
+http://www.xzbu.com/8/view-8699343.htm 
+基于WEB的学院教务管理系统设计与应用
+
+http://www.xzbu.com/8/view-3922806.htm
+基于Web的通辽职业学院教务管理系统设计与实现*
+
+http://www.xzbu.com/7/view-8068064.htm 
+基于Web的教务管理系统的设计与实现*
+
+http://www.xzbu.com/4/view-3442902.htm
+基于Web服务的高校教务管理系统的设计和实现
+
+http://www.xzbu.com/8/view-4147250.htm 
+基于WEB的课题管理系统的设计与实现
+
+http://www.xzbu.com/8/view-3296309.htm 
+基于Web的数据采集系统设计
+
+http://www.xzbu.com/8/view-4184552.htm 
+一个基于WEB的学生请假管理系统的数据库设计
+
+http://www.xzbu.com/8/view-3604355.htm 
+基于WEB数据库的学生综合管理系统的实现
+
+http://www.xzbu.com/7/view-7978755.htm 
+基于Web数据库的教务管理系统的设计与实现
