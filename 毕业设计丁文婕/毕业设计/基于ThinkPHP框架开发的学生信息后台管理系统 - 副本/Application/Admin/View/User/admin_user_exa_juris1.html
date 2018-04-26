@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+</head>
+<body>
+<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/adminUserManage')}">管理员管理</a></li>
+			<li><a href="{:U('/Admin/index/adminUserAdd')}">添加管理员</a></li>
+			<li class="active"><a href="{:U('/Admin/index/adminUserAdd')}">管理员权限</a></li>
+		</ul>
+		<form id="add_admin_user" name="add_admin_user" action="{:U('/Admin/AdminUser/addAdminUser')}" class="form-horizontal js-ajax-form" novalidate="novalidate">
+		
+			<fieldset>
+				 <div class="table_full">
+				 <input type="hidden" name="uid" value="{$id}">
+            <table class="table table-bordered treeTable" id="authrule-tree">
+                <tbody>
+                <tr id="node-1" style="" class="initialized parent expanded">
+                    <td style="padding-left:30px;"><span style="padding-left: 20px" class="expander"></span><input
+                            type="checkbox" name="menuid[]" value="1" level="0" checked=""
+                            onclick="javascript:checknode(this);"> 内容管理
+                    </td>
+                </tr>
+	                <tr id="node-2" class="child-of-node-1 initialized parent expanded" style="">
+	                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+	                        <input type="checkbox" name="menuid[]" value="2" level="1" checked=""
+	                               onclick="javascript:checknode(this);"> 所有留言
+	                    </td>
+	                </tr>
+
+		                <tr id="node-3" class="child-of-node-2 initialized" style="">
+		                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ 
+		                    <input type="checkbox"
+		                                                                                                    name="menuid[]"
+		                                                                                                    value="3" level="2"
+		                                                                                                    onclick="javascript:checknode(this);">
+		                        删除网站留言
+		                    </td>
+		                </tr>
+
+                <tr id="node-4" class="child-of-node-1 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="4" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 评论管理
+                    </td>
+                </tr>
+                <tr id="node-5" class="child-of-node-4 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="5" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除评论
+                    </td>
+                </tr>
+                <tr id="node-6" class="child-of-node-4 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="6" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        评论审核
+                    </td>
+                </tr>
+                <tr id="node-7" class="child-of-node-1 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="7" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 文章管理
+                    </td>
+                </tr>
+                <tr id="node-8" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="8" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文章排序
+                    </td>
+                </tr>
+                <tr id="node-9" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="9" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文章置顶
+                    </td>
+                </tr>
+                <tr id="node-10" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="10" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文章推荐
+                    </td>
+                </tr>
+                <tr id="node-11" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="11" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        批量移动
+                    </td>
+                </tr>
+                <tr id="node-12" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="12" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文章审核
+                    </td>
+                </tr>
+                <tr id="node-13" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="13" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除文章
+                    </td>
+                </tr>
+                <tr id="node-14" class="child-of-node-7 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="14" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 编辑文章
+                    </td>
+                </tr>
+                <tr id="node-15" class="child-of-node-14 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="15" level="3" onclick="javascript:checknode(this);">
+                        提交编辑
+                    </td>
+                </tr>
+                <tr id="node-16" class="child-of-node-7 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="16" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 添加文章
+                    </td>
+                </tr>
+                <tr id="node-17" class="child-of-node-16 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="17" level="3" onclick="javascript:checknode(this);">
+                        提交添加
+                    </td>
+                </tr>
+                <tr id="node-169" class="child-of-node-7 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="169"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文章批量复制
+                    </td>
+                </tr>
+                <tr id="node-18" class="child-of-node-1 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="18" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 分类管理
+                    </td>
+                </tr>
+                <tr id="node-19" class="child-of-node-18 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="19" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文章分类排序
+                    </td>
+                </tr>
+                <tr id="node-20" class="child-of-node-18 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="20" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除分类
+                    </td>
+                </tr>
+                <tr id="node-21" class="child-of-node-18 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="21" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 编辑分类
+                    </td>
+                </tr>
+                <tr id="node-22" class="child-of-node-21 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="22" level="3" onclick="javascript:checknode(this);">
+                        提交编辑
+                    </td>
+                </tr>
+                <tr id="node-23" class="child-of-node-18 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="23" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 添加分类
+                    </td>
+                </tr>
+                <tr id="node-24" class="child-of-node-23 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="24" level="3" onclick="javascript:checknode(this);">
+                        提交添加
+                    </td>
+                </tr>
+                <tr id="node-25" class="child-of-node-1 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="25" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 页面管理
+                    </td>
+                </tr>
+                <tr id="node-26" class="child-of-node-25 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="26" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        页面排序
+                    </td>
+                </tr>
+                <tr id="node-27" class="child-of-node-25 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="27" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除页面
+                    </td>
+                </tr>
+                <tr id="node-28" class="child-of-node-25 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="28" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 编辑页面
+                    </td>
+                </tr>
+                <tr id="node-29" class="child-of-node-28 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="29" level="3" onclick="javascript:checknode(this);">
+                        提交编辑
+                    </td>
+                </tr>
+                <tr id="node-30" class="child-of-node-25 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="30" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 添加页面
+                    </td>
+                </tr>
+                <tr id="node-31" class="child-of-node-30 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="31" level="3" onclick="javascript:checknode(this);">
+                        提交添加
+                    </td>
+                </tr>
+                <tr id="node-32" class="child-of-node-1 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="32" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 回收站
+                    </td>
+                </tr>
+                <tr id="node-33" class="child-of-node-32 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="33" level="2" checked=""
+                               onclick="javascript:checknode(this);"> 文章回收
+                    </td>
+                </tr>
+                <tr id="node-34" class="child-of-node-33 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="34" level="3" onclick="javascript:checknode(this);">
+                        文章还原
+                    </td>
+                </tr>
+                <tr id="node-35" class="child-of-node-33 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="35" level="3" onclick="javascript:checknode(this);">
+                        彻底删除
+                    </td>
+                </tr>
+                <tr id="node-36" class="child-of-node-32 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="36" level="2" checked=""
+                               onclick="javascript:checknode(this);"> 页面回收
+                    </td>
+                </tr>
+                <tr id="node-37" class="child-of-node-36 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="37" level="3" onclick="javascript:checknode(this);">
+                        彻底删除
+                    </td>
+                </tr>
+                <tr id="node-38" class="child-of-node-36 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="38" level="3" onclick="javascript:checknode(this);">
+                        页面还原
+                    </td>
+                </tr>
+                <tr id="node-39" style="" class="initialized parent expanded">
+                    <td style="padding-left:30px;"><span style="padding-left: 20px" class="expander"></span><input
+                            type="checkbox" name="menuid[]" value="39" level="0" checked=""
+                            onclick="javascript:checknode(this);"> 扩展工具
+                    </td>
+                </tr>
+                <tr id="node-40" class="child-of-node-39 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="40" level="1"
+                               onclick="javascript:checknode(this);"> 备份管理
+                    </td>
+                </tr>
+                <tr id="node-41" class="child-of-node-40 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="41" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        数据还原
+                    </td>
+                </tr>
+                <tr id="node-42" class="child-of-node-40 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="42" level="2"
+                                                    onclick="javascript:checknode(this);"> 数据备份
+                    </td>
+                </tr>
+                <tr id="node-43" class="child-of-node-42 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="43" level="3" onclick="javascript:checknode(this);">
+                        提交数据备份
+                    </td>
+                </tr>
+                <tr id="node-44" class="child-of-node-40 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="44" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        下载备份
+                    </td>
+                </tr>
+                <tr id="node-45" class="child-of-node-40 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="45" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除备份
+                    </td>
+                </tr>
+                <tr id="node-46" class="child-of-node-40 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="46" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        数据备份导入
+                    </td>
+                </tr>
+                <tr id="node-47" class="child-of-node-39 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="47" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 插件管理
+                    </td>
+                </tr>
+                <tr id="node-48" class="child-of-node-47 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="48" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        插件启用切换
+                    </td>
+                </tr>
+                <tr id="node-49" class="child-of-node-47 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="49" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 插件设置
+                    </td>
+                </tr>
+                <tr id="node-50" class="child-of-node-49 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="50" level="3" onclick="javascript:checknode(this);">
+                        插件设置提交
+                    </td>
+                </tr>
+                <tr id="node-51" class="child-of-node-47 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="51" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        插件安装
+                    </td>
+                </tr>
+                <tr id="node-52" class="child-of-node-47 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="52" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        插件卸载
+                    </td>
+                </tr>
+                <tr id="node-155" class="child-of-node-47 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="155"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        插件更新
+                    </td>
+                </tr>
+                <tr id="node-53" class="child-of-node-39 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="53" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 幻灯片
+                    </td>
+                </tr>
+                <tr id="node-54" class="child-of-node-53 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="54" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 幻灯片管理
+                    </td>
+                </tr>
+                <tr id="node-55" class="child-of-node-54 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="55" level="3" onclick="javascript:checknode(this);">
+                        幻灯片排序
+                    </td>
+                </tr>
+                <tr id="node-56" class="child-of-node-54 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="56" level="3" onclick="javascript:checknode(this);">
+                        幻灯片显示切换
+                    </td>
+                </tr>
+                <tr id="node-57" class="child-of-node-54 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="57" level="3" onclick="javascript:checknode(this);">
+                        删除幻灯片
+                    </td>
+                </tr>
+                <tr id="node-58" class="child-of-node-54 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="58"
+                                                                        level="3" checked=""
+                                                                        onclick="javascript:checknode(this);"> 编辑幻灯片
+                    </td>
+                </tr>
+                <tr id="node-59" class="child-of-node-58 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="59" level="4"
+                               onclick="javascript:checknode(this);"> 提交编辑
+                    </td>
+                </tr>
+                <tr id="node-60" class="child-of-node-54 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="60"
+                                                                        level="3" checked=""
+                                                                        onclick="javascript:checknode(this);"> 添加幻灯片
+                    </td>
+                </tr>
+                <tr id="node-61" class="child-of-node-60 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="61" level="4"
+                               onclick="javascript:checknode(this);"> 提交添加
+                    </td>
+                </tr>
+                <tr id="node-158" class="child-of-node-54 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="158" level="3" onclick="javascript:checknode(this);">
+                        禁用幻灯片
+                    </td>
+                </tr>
+                <tr id="node-159" class="child-of-node-54 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="159" level="3" onclick="javascript:checknode(this);">
+                        启用幻灯片
+                    </td>
+                </tr>
+                <tr id="node-62" class="child-of-node-53 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="62" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 幻灯片分类
+                    </td>
+                </tr>
+                <tr id="node-63" class="child-of-node-62 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="63" level="3" onclick="javascript:checknode(this);">
+                        删除分类
+                    </td>
+                </tr>
+                <tr id="node-64" class="child-of-node-62 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="64"
+                                                                      level="3" checked=""
+                                                                      onclick="javascript:checknode(this);"> 编辑分类
+                    </td>
+                </tr>
+                <tr id="node-65" class="child-of-node-64 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="65" level="4"
+                               onclick="javascript:checknode(this);"> 提交编辑
+                    </td>
+                </tr>
+                <tr id="node-66" class="child-of-node-62 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="66"
+                                                                      level="3" checked=""
+                                                                      onclick="javascript:checknode(this);"> 添加分类
+                    </td>
+                </tr>
+                <tr id="node-67" class="child-of-node-66 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="67" level="4"
+                               onclick="javascript:checknode(this);"> 提交添加
+                    </td>
+                </tr>
+                <tr id="node-68" class="child-of-node-39 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="68" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 网站广告
+                    </td>
+                </tr>
+                <tr id="node-69" class="child-of-node-68 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="69" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        广告显示切换
+                    </td>
+                </tr>
+                <tr id="node-70" class="child-of-node-68 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="70" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除广告
+                    </td>
+                </tr>
+                <tr id="node-71" class="child-of-node-68 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="71" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 编辑广告
+                    </td>
+                </tr>
+                <tr id="node-72" class="child-of-node-71 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="72" level="3" onclick="javascript:checknode(this);">
+                        提交编辑
+                    </td>
+                </tr>
+                <tr id="node-73" class="child-of-node-68 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="73" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 添加广告
+                    </td>
+                </tr>
+                <tr id="node-74" class="child-of-node-73 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="74" level="3" onclick="javascript:checknode(this);">
+                        提交添加
+                    </td>
+                </tr>
+                <tr id="node-75" class="child-of-node-39 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="75" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 友情链接
+                    </td>
+                </tr>
+                <tr id="node-76" class="child-of-node-75 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="76" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        友情链接排序
+                    </td>
+                </tr>
+                <tr id="node-77" class="child-of-node-75 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="77" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        友链显示切换
+                    </td>
+                </tr>
+                <tr id="node-78" class="child-of-node-75 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="78" level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        删除友情链接
+                    </td>
+                </tr>
+                <tr id="node-79" class="child-of-node-75 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="79" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 编辑友情链接
+                    </td>
+                </tr>
+                <tr id="node-80" class="child-of-node-79 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="80" level="3" onclick="javascript:checknode(this);">
+                        提交编辑
+                    </td>
+                </tr>
+                <tr id="node-81" class="child-of-node-75 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="81" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 添加友情链接
+                    </td>
+                </tr>
+                <tr id="node-82" class="child-of-node-81 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="82" level="3" onclick="javascript:checknode(this);">
+                        提交添加
+                    </td>
+                </tr>
+                <tr id="node-83" class="child-of-node-39 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="83" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 第三方登陆
+                    </td>
+                </tr>
+                <tr id="node-84" class="child-of-node-83 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="84" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        提交设置
+                    </td>
+                </tr>
+                <tr id="node-85" style="" class="initialized parent expanded">
+                    <td style="padding-left:30px;"><span style="padding-left: 20px" class="expander"></span><input
+                            type="checkbox" name="menuid[]" value="85" level="0" checked=""
+                            onclick="javascript:checknode(this);"> 菜单管理
+                    </td>
+                </tr>
+                <tr id="node-86" class="child-of-node-85 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="86" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 前台菜单
+                    </td>
+                </tr>
+                <tr id="node-87" class="child-of-node-86 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="87" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 菜单管理
+                    </td>
+                </tr>
+                <tr id="node-88" class="child-of-node-87 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="88" level="3" onclick="javascript:checknode(this);">
+                        前台导航排序
+                    </td>
+                </tr>
+                <tr id="node-89" class="child-of-node-87 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="89" level="3" onclick="javascript:checknode(this);">
+                        删除菜单
+                    </td>
+                </tr>
+                <tr id="node-90" class="child-of-node-87 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="90"
+                                                                        level="3" checked=""
+                                                                        onclick="javascript:checknode(this);"> 编辑菜单
+                    </td>
+                </tr>
+                <tr id="node-91" class="child-of-node-90 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="91" level="4"
+                               onclick="javascript:checknode(this);"> 提交编辑
+                    </td>
+                </tr>
+                <tr id="node-92" class="child-of-node-87 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="92"
+                                                                        level="3" checked=""
+                                                                        onclick="javascript:checknode(this);"> 添加菜单
+                    </td>
+                </tr>
+                <tr id="node-93" class="child-of-node-92 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="93" level="4"
+                               onclick="javascript:checknode(this);"> 提交添加
+                    </td>
+                </tr>
+                <tr id="node-94" class="child-of-node-86 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="94" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 菜单分类
+                    </td>
+                </tr>
+                <tr id="node-95" class="child-of-node-94 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="95" level="3" onclick="javascript:checknode(this);">
+                        删除分类
+                    </td>
+                </tr>
+                <tr id="node-96" class="child-of-node-94 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="96"
+                                                                      level="3" checked=""
+                                                                      onclick="javascript:checknode(this);"> 编辑分类
+                    </td>
+                </tr>
+                <tr id="node-97" class="child-of-node-96 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="97" level="4"
+                               onclick="javascript:checknode(this);"> 提交编辑
+                    </td>
+                </tr>
+                <tr id="node-98" class="child-of-node-94 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="98"
+                                                                      level="3" checked=""
+                                                                      onclick="javascript:checknode(this);"> 添加分类
+                    </td>
+                </tr>
+                <tr id="node-99" class="child-of-node-98 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="99" level="4"
+                               onclick="javascript:checknode(this);"> 提交添加
+                    </td>
+                </tr>
+                <tr id="node-100" class="child-of-node-85 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="100" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 后台菜单
+                    </td>
+                </tr>
+                <tr id="node-101" class="child-of-node-100 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="101" level="2" checked=""
+                               onclick="javascript:checknode(this);"> 添加菜单
+                    </td>
+                </tr>
+                <tr id="node-102" class="child-of-node-101 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="102" level="3" onclick="javascript:checknode(this);">
+                        提交添加
+                    </td>
+                </tr>
+                <tr id="node-103" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="103" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        后台菜单排序
+                    </td>
+                </tr>
+                <tr id="node-104" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="104" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        菜单备份
+                    </td>
+                </tr>
+                <tr id="node-105" class="child-of-node-100 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="105" level="2" checked=""
+                               onclick="javascript:checknode(this);"> 编辑菜单
+                    </td>
+                </tr>
+                <tr id="node-106" class="child-of-node-105 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="106" level="3" onclick="javascript:checknode(this);">
+                        提交编辑
+                    </td>
+                </tr>
+                <tr id="node-107" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="107" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        删除菜单
+                    </td>
+                </tr>
+                <tr id="node-108" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="108" level="2"
+                                                                                                  checked=""
+                                                                                                  onclick="javascript:checknode(this);">
+                        所有菜单
+                    </td>
+                </tr>
+                <tr id="node-174" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="174" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        备份菜单
+                    </td>
+                </tr>
+                <tr id="node-175" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="175" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        导出后台菜单多语言包
+                    </td>
+                </tr>
+                <tr id="node-176" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="176" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        还原菜单
+                    </td>
+                </tr>
+                <tr id="node-177" class="child-of-node-100 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="177" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        导入新菜单
+                    </td>
+                </tr>
+                <tr id="node-109" style="" class="initialized parent expanded">
+                    <td style="padding-left:30px;"><span style="padding-left: 20px" class="expander"></span><input
+                            type="checkbox" name="menuid[]" value="109" level="0" checked=""
+                            onclick="javascript:checknode(this);"> 设置
+                    </td>
+                </tr>
+                <tr id="node-110" class="child-of-node-109 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="110" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 个人信息
+                    </td>
+                </tr>
+                <tr id="node-111" class="child-of-node-110 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="111" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 修改信息
+                    </td>
+                </tr>
+                <tr id="node-112" class="child-of-node-111 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="112" level="3" onclick="javascript:checknode(this);">
+                        修改信息提交
+                    </td>
+                </tr>
+                <tr id="node-113" class="child-of-node-110 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="113" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 修改密码
+                    </td>
+                </tr>
+                <tr id="node-114" class="child-of-node-113 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="114" level="3" onclick="javascript:checknode(this);">
+                        提交修改
+                    </td>
+                </tr>
+                <tr id="node-115" class="child-of-node-109 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="115" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 网站信息
+                    </td>
+                </tr>
+                <tr id="node-116" class="child-of-node-115 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="116"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        提交修改
+                    </td>
+                </tr>
+                <tr id="node-117" class="child-of-node-115 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="117"
+                                                                                                    level="2" checked=""
+                                                                                                    onclick="javascript:checknode(this);">
+                        路由列表
+                    </td>
+                </tr>
+                <tr id="node-118" class="child-of-node-115 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="118" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 路由添加
+                    </td>
+                </tr>
+                <tr id="node-119" class="child-of-node-118 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="119" level="3" onclick="javascript:checknode(this);">
+                        路由添加提交
+                    </td>
+                </tr>
+                <tr id="node-120" class="child-of-node-115 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="120" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 路由编辑
+                    </td>
+                </tr>
+                <tr id="node-121" class="child-of-node-120 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="121" level="3" onclick="javascript:checknode(this);">
+                        路由编辑提交
+                    </td>
+                </tr>
+                <tr id="node-122" class="child-of-node-115 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="122"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        路由删除
+                    </td>
+                </tr>
+                <tr id="node-123" class="child-of-node-115 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="123"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        路由禁止
+                    </td>
+                </tr>
+                <tr id="node-124" class="child-of-node-115 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="124"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        路由启用
+                    </td>
+                </tr>
+                <tr id="node-125" class="child-of-node-115 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="125"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        路由排序
+                    </td>
+                </tr>
+                <tr id="node-126" class="child-of-node-109 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="126" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 邮箱配置
+                    </td>
+                </tr>
+                <tr id="node-127" class="child-of-node-126 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="127" level="2"
+                                                    onclick="javascript:checknode(this);"> SMTP配置
+                    </td>
+                </tr>
+                <tr id="node-128" class="child-of-node-127 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="128" level="3" onclick="javascript:checknode(this);">
+                        提交配置
+                    </td>
+                </tr>
+                <tr id="node-166" class="child-of-node-127 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="166" level="3" onclick="javascript:checknode(this);">
+                        测试邮件
+                    </td>
+                </tr>
+                <tr id="node-129" class="child-of-node-126 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="129" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 注册邮件模板
+                    </td>
+                </tr>
+                <tr id="node-130" class="child-of-node-129 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="130" level="3" onclick="javascript:checknode(this);">
+                        提交模板
+                    </td>
+                </tr>
+                <tr id="node-131" class="child-of-node-109 initialized" style="">
+                    <td style="padding-left: 50px;">&nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]"
+                                                                                value="131" level="1"
+                                                                                onclick="javascript:checknode(this);">
+                        清除缓存
+                    </td>
+                </tr>
+                <tr id="node-156" class="child-of-node-109 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="156" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 文件存储
+                    </td>
+                </tr>
+                <tr id="node-157" class="child-of-node-156 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                    name="menuid[]"
+                                                                                                    value="157"
+                                                                                                    level="2"
+                                                                                                    onclick="javascript:checknode(this);">
+                        文件存储设置提交
+                    </td>
+                </tr>
+                <tr id="node-167" class="child-of-node-109 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="167" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 上传设置
+                    </td>
+                </tr>
+                <tr id="node-168" class="child-of-node-167 initialized" style="">
+                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input type="checkbox"
+                                                                                                  name="menuid[]"
+                                                                                                  value="168" level="2"
+                                                                                                  onclick="javascript:checknode(this);">
+                        上传设置提交
+                    </td>
+                </tr>
+                <tr id="node-132" style="" class="initialized parent expanded">
+                    <td style="padding-left:30px;"><span style="padding-left: 20px" class="expander"></span><input
+                            type="checkbox" name="menuid[]" value="132" level="0" checked=""
+                            onclick="javascript:checknode(this);"> 用户管理
+                    </td>
+                </tr>
+                <tr id="node-133" class="child-of-node-132 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="133" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 用户组
+                    </td>
+                </tr>
+                <tr id="node-134" class="child-of-node-133 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="134" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 本站用户
+                    </td>
+                </tr>
+                <tr id="node-135" class="child-of-node-134 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="135" level="3" onclick="javascript:checknode(this);">
+                        拉黑会员
+                    </td>
+                </tr>
+                <tr id="node-136" class="child-of-node-134 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="136" level="3" onclick="javascript:checknode(this);">
+                        启用会员
+                    </td>
+                </tr>
+                <tr id="node-137" class="child-of-node-133 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="137" level="2" checked=""
+                                                    onclick="javascript:checknode(this);"> 第三方用户
+                    </td>
+                </tr>
+                <tr id="node-138" class="child-of-node-137 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="138" level="3" onclick="javascript:checknode(this);">
+                        第三方用户解绑
+                    </td>
+                </tr>
+                <tr id="node-139" class="child-of-node-132 initialized parent expanded" style="">
+                    <td style="padding-left: 50px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="139" level="1" checked=""
+                               onclick="javascript:checknode(this);"> 管理组
+                    </td>
+                </tr>
+                <tr id="node-140" class="child-of-node-139 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="140" level="2" checked=""
+                               onclick="javascript:checknode(this);"> 角色管理
+                    </td>
+                </tr>
+                <tr id="node-141" class="child-of-node-140 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="141" level="3" checked=""
+                            onclick="javascript:checknode(this);"> 成员管理
+                    </td>
+                </tr>
+                <tr id="node-142" class="child-of-node-140 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="142" level="3" checked=""
+                                                    onclick="javascript:checknode(this);"> 权限设置
+                    </td>
+                </tr>
+                <tr id="node-143" class="child-of-node-142 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="143" level="4"
+                               onclick="javascript:checknode(this);"> 提交设置
+                    </td>
+                </tr>
+                <tr id="node-144" class="child-of-node-140 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;├─ <input type="checkbox" name="menuid[]" value="144" level="3" checked=""
+                                                    onclick="javascript:checknode(this);"> 编辑角色
+                    </td>
+                </tr>
+                <tr id="node-145" class="child-of-node-144 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="145" level="4"
+                               onclick="javascript:checknode(this);"> 提交编辑
+                    </td>
+                </tr>
+                <tr id="node-146" class="child-of-node-140 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="146" level="3" onclick="javascript:checknode(this);">
+                        删除角色
+                    </td>
+                </tr>
+                <tr id="node-147" class="child-of-node-140 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│
+                        &nbsp;&nbsp;&nbsp;└─ <input type="checkbox" name="menuid[]" value="147" level="3" checked=""
+                                                    onclick="javascript:checknode(this);"> 添加角色
+                    </td>
+                </tr>
+                <tr id="node-148" class="child-of-node-147 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="148" level="4"
+                               onclick="javascript:checknode(this);"> 提交添加
+                    </td>
+                </tr>
+                <tr id="node-149" class="child-of-node-139 initialized parent expanded" style="">
+                    <td style="padding-left: 70px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="149" level="2" checked=""
+                               onclick="javascript:checknode(this);"> 管理员
+                    </td>
+                </tr>
+                <tr id="node-150" class="child-of-node-149 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="150" level="3" onclick="javascript:checknode(this);">
+                        删除管理员
+                    </td>
+                </tr>
+                <tr id="node-151" class="child-of-node-149 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="151" level="3" checked=""
+                               onclick="javascript:checknode(this);"> 管理员编辑
+                    </td>
+                </tr>
+                <tr id="node-152" class="child-of-node-151 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="152" level="4"
+                               onclick="javascript:checknode(this);"> 编辑提交
+                    </td>
+                </tr>
+                <tr id="node-153" class="child-of-node-149 initialized parent expanded" style="">
+                    <td style="padding-left: 90px;"><span style="padding-left: 20px" class="expander"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─
+                        <input type="checkbox" name="menuid[]" value="153" level="3" checked=""
+                               onclick="javascript:checknode(this);"> 管理员添加
+                    </td>
+                </tr>
+                <tr id="node-154" class="child-of-node-153 initialized" style="">
+                    <td style="padding-left: 110px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                        <input type="checkbox" name="menuid[]" value="154" level="4"
+                               onclick="javascript:checknode(this);"> 添加提交
+                    </td>
+                </tr>
+                <tr id="node-160" class="child-of-node-149 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <input
+                            type="checkbox" name="menuid[]" value="160" level="3" onclick="javascript:checknode(this);">
+                        禁用管理员
+                    </td>
+                </tr>
+                <tr id="node-161" class="child-of-node-149 initialized" style="">
+                    <td style="padding-left: 90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <input
+                            type="checkbox" name="menuid[]" value="161" level="3" onclick="javascript:checknode(this);">
+                        启用管理员
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+				<div class="form-actions">
+					<button type="button" onclick="addAdminUser()" class="btn btn-primary  js-ajax-submit">添加</button>
+					<a class="btn" href="javascript:history.back(-1);">返回</a>
+				</div>
+			</fieldset>
+		</form>
+</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_admin_user.js"></script>
+<script type="text/javascript">
+    function checknode(obj) {
+        var chk = $("input[type='checkbox']");
+        var count = chk.length;
+        var num = chk.index(obj);
+        var level_top = level_bottom = chk.eq(num).attr('level');
+        for (var i = num; i >= 0; i--) {
+            var le = chk.eq(i).attr('level');
+            if (le < level_top) {
+                chk.eq(i).prop("checked", true);
+                var level_top = level_top - 1;
+            }
+        }
+        for (var j = num + 1; j < count; j++) {
+            var le = chk.eq(j).attr('level');
+            if (chk.eq(num).prop("checked")) {
+                if (le > level_bottom) {
+                    chk.eq(j).prop("checked", true);
+                }
+                else if (le == level_bottom) {
+                    break;
+                }
+            } else {
+                if (le > level_bottom) {
+                    chk.eq(j).prop("checked", false);
+                } else if (le == level_bottom) {
+                    break;
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+</head>
+<body>
+<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/trainRoomManage')}">教室管理</a></li>
+        	<li class="active"><a href="{:U('/Admin/index/trainRoomAdd')}" >添加教室</a></li>
+		</ul>
+		<form name="form_data" action="{:U('/Admin/Train/ajaxAddRoom')}" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label" for="input-old-password">教室名称</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="input-old-password" name="post[name]">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-old-password">备注信息</label>
+					<div class="controls">
+						<textarea name="post[ramark]" style="height:50px;"></textarea>
+					</div>
+
+				</div>
+				<div class="form-actions">
+					<button type="button" onclick="submit_ajax_form()" class="btn btn-primary  js-ajax-submit">添加</button>
+				</div>
+			</fieldset>
+		</form>
+</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_common.js"></script>
+</body>
+</html>

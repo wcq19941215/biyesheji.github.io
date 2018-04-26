@@ -1,0 +1,81 @@
+        <div class="table-actions">
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/check/check/1" data-subcheck="true">审核</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/check/uncheck/1" data-subcheck="true">取消审核</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/top/top/1" data-subcheck="true">置顶</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/top/untop/1" data-subcheck="true">取消置顶</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/recommend/recommend/1" data-subcheck="true">推荐</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/recommend/unrecommend/1" data-subcheck="true">取消推荐</button>
+			<button class="btn btn-primary btn-small js-articles-copy" type="button">批量复制</button>
+			<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/delete" data-subcheck="true" data-msg="您确定删除吗？">删除</button>
+		</div>
+		
+        <input id="current_url" type="hidden" name="current_url" value="{$current_url}" />
+
+		<table class="table table-hover table-bordered table-list">
+			<thead>
+				<tr>
+					<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+					<th width="50">ID</th>
+					<th>标题</th>
+					<th width="50">分类</th>
+					<th width="50">作者</th>
+					<th width="50">点击量</th>
+					<th width="50">评论量</th>
+					<th width="160">关键字</th>
+					<th width="150">发布时间</th>
+					<th width="50">状态</th>
+					<th width="70">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			  <for start="0" end="count($article_list)">
+			  	<tr>
+				   <td>
+					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$article_list[$i]['id']}" title="ID:{$article_list[$i]['id']}"></td>
+					<td><b>{$article_list[$i]['id']}</b></td>
+					<td>{$article_list[$i]['title']}</td>
+					<td>{$article_list[$i]['menu_name']}</td>
+					<td>{$article_list[$i]['author']}</td>
+					<td>{$article_list[$i]['hits']}</td>
+					<td>{$article_list[$i]['hits']}</td>
+					<td>{$article_list[$i]['keywords']}</td>
+					<td><php>echo date('Y-m-d H:i:s',$article_list[$i]['datetime'])</php></td>
+                    <td>
+                      <if condition="$article_list[$i]['status'] eq 1">
+                      	<a onclick="update_word_one({$article_list[$i]['id']},'status',0)" data-toggle="tooltip" title="" data-original-title="已审核"><i class="fa fa-check"></i></a>
+                      <else/>
+                        <a onclick="update_word_one({$article_list[$i]['id']},'status',1)" data-toggle="tooltip" title="" data-original-title="未审核"><i class="fa fa-close"></i></a>
+                      </if>
+                      <if condition="$article_list[$i]['istop'] eq 1">
+                      	<a onclick="update_word_one({$article_list[$i]['id']},'istop',0)" data-toggle="tooltip" title="" data-original-title="已置顶"><i class="fa fa-arrow-up"></i></a>
+                      <else/>
+                        <a onclick="update_word_one({$article_list[$i]['id']},'istop',1)" data-toggle="tooltip" title="" data-original-title="未置顶"><i class="fa fa-arrow-down"></i></a>
+                      </if>
+
+                      <if condition="$article_list[$i]['recommended'] eq 1">
+                      	<a onclick="update_word_one({$article_list[$i]['id']},'recommended',0)" data-toggle="tooltip" title="" data-original-title="已推荐"><i class="fa fa-thumbs-up"></i></a>
+                      <else/>
+                        <a onclick="update_word_one({$article_list[$i]['id']},'recommended',1)" data-toggle="tooltip" title="" data-original-title="未推荐"><i class="fa fa-thumbs-down"></i></a>
+                      </if>						
+					</td>
+					<td>
+					<a href="{:U('/Admin/index/editArticle',array('id'=>$article_list[$i]['id']))}">编辑</a> | 
+					<a href="javascript:;" onclick='del_article({$article_list[$i]["id"]},$(this))' class="js-ajax-delete">删除</a>
+					
+					</td>
+
+				 </tr>
+			  </for>
+				
+
+			</tbody>
+            
+			
+			
+		</table>
+			<div id="page" class="wp-paginate">
+             	{$page}
+            </div>
+
+            
+            

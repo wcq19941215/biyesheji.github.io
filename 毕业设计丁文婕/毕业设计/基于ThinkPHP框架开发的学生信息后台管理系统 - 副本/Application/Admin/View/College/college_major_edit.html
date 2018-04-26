@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+		.table-list{margin-bottom: 0px;}
+	</style>
+	<include file="Assis:init_css"/>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/majorManage')}" >专业管理</a></li>
+			<li><a href="{:U('/Admin/index/collegeMajorAdd')}" >添加专业</a></li>
+			<li class="active"><a href="{:U('/Admin/index/collegeMajorEdit')}" >修改专业</a></li>
+		</ul>
+		<form id="add_index_menu" name="edit_college" action="{:U('/Admin/College/ajaxEditMajor')}" method="post" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+			<input type="hidden" name="id" value="{$major['id']}">
+				<!-- <div class="control-group">
+					<label class="control-label">地区</label>
+					<div class="controls">
+						<select onclick="getSchool($(this).val())" name="aid" id="navcid_select">
+							<option value="0" selected="">请选择地区</option>
+							<for start="0" end="count($area)">
+								<option value="{$area[$i]['id']}">{$area[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div> -->
+
+				<div class="control-group">
+					<label class="control-label">学校</label>
+					<div class="controls">
+						<select name="sid" id="school">
+							<option value="{$major['sid']}" selected="">{$major['school']}</option>
+							<!-- <option value="3">erji</option> -->
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">专业</label>
+					<div class="controls">
+						<input type="text" name="name" id="outlink_input" value="{$major['name']}" class="valid" aria-invalid="false" placeholder="请输入专业...">
+						
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">层次</label>
+					<div class="controls">
+						<select name="lid" id="level">
+							<for start="0" end="count($level)">
+							    <if condition="$level[$i]['id'] eq $major['lid']">
+							    	<option value="{$level[$i]['id']}" selected="">{$level[$i]['name']}</option>
+							    	<php>continue;</php>
+							    </if>
+								<option value="{$level[$i]['id']}">{$level[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div>
+
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="button" onclick="editCollege()" class="btn btn-primary js-ajax-submit">修改</button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+
+		</form>
+	</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_college.js"></script>
+</body>
+</html>

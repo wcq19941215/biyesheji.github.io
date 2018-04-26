@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list_page.css"/>
+<!-- 分页样式 -->
+<include file="Assis:init_js"/>
+
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="{:U('/Admin/index/gradeManage')}" >分数管理</a></li>
+		<li><a href="{:U('/Admin/index/collegeGradeAdd')}" >添加分数</a></li>
+
+	</ul>
+		
+	<form name="sel_college" class="well form-search" action="{:U('/Admin/index/gradeManage')}" method="post">
+	    地区： 
+		<select name="aid" id="area" style="width: 80px;" onclick="getSchool($(this).val())">
+			<option value="0">全部</option>
+		   <for start="0" end="count($area)">
+		   	<option value="{$area[$i]['id']}">{$area[$i]['name']}</option>
+		   </for>
+			
+		</select> &nbsp;&nbsp;
+		学校： 
+		<select name="sid" id="school" style="width: 200px;" onclick="getMajor($(this).val(),$('#level').val())">
+			<option value="0">全部</option>
+		</select> &nbsp;&nbsp;
+		层次： 
+		<select name="lid" id="level" style="width: 100px;" onclick="getMajor($('#school').val(),$(this).val())">
+			<option value="0">全部</option>
+		   <for start="0" end="count($level)">
+		   	<option value="{$level[$i]['id']}">{$level[$i]['name']}</option>
+		   </for>
+			
+		</select> &nbsp;&nbsp;
+		专业： 
+		<select name="mid" id="major" style="width: 200px;">
+			<option value="0">请选择专业</option>
+			
+		</select> &nbsp;&nbsp;
+		年份:
+		<select name="year" id="year" style="width:100px;">
+		  <for start="0" end="count($year)">
+		  	<option value="{$year[$i]['name']}" selected="">{$year[$i]['name']}</option>
+
+		  </for>
+		</select> &nbsp;&nbsp;
+		<input type="button" onclick="sel_college_list()" class="btn btn-primary" value="搜索">
+		<input type="reset" class="btn btn-danger" value="清空">
+	</form>
+		
+	<form name="college_list" class="js-ajax-form" novalidate="novalidate">
+		<include file="College:Assis/grade_list_mast"/>
+	</form>
+</div>
+
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_college.js"></script>
+
+</body>
+</html>

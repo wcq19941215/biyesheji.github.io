@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+		.table-list{margin-bottom: 0px;}
+	</style>
+	<include file="Assis:init_css"/>
+<!-- 时间控件 -->
+<link rel="stylesheet" href="__PUBLIC__/common/css/calendar.css">
+<style type="text/css">
+.calendar ul, .calendar ol, .calendar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<!-- 时间控件 -->
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+		   <li><a href="{:U('/Admin/index/trainBeginsManage')}">班级管理</a></li>
+           <li class="active"><a href="{:U('/Admin/index/trainBeginsAdd')}" >添加班级信息</a></li>
+		</ul>
+		<form name="form_data" action="{:U('/Admin/Train/ajaxAddBegins')}" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+				<div class="control-group">
+						<label class="control-label">班级名称</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge" id="input-old-password" name="post[name]">
+						</div>
+					</div>
+
+				<div class="control-group">
+					<label class="control-label">课程</label>
+					<div class="controls">
+						<select name="post[c_id]">
+							<for start="0" end="count($course)">
+								<option value="{$course[$i]['id']}">{$course[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">教师</label>
+					<div class="controls">
+						<select name="post[t_id]">
+							<for start="0" end="count($tea)">
+								<option value="{$tea[$i]['id']}">{$tea[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="control-group">
+					<label class="control-label">教室</label>
+					<div class="controls">
+						<select name="post[r_id]">
+
+							<for start="0" end="count($room)">
+								<option value="{$room[$i]['id']}">{$room[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">上课时间</label>
+					<div class="controls">
+						<input type="text" id="start_time" name="post[start_time]" value="<?php echo date('Y-m-d H:i:s');?>" class="js-datetime date">
+                             <include file="Assis:start_times"/>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">备注</label>
+					<div class="controls">
+						<textarea name="post[ramark]" style="height:50px;"></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="button" onclick="submit_ajax_form()" class="btn btn-primary js-ajax-submit">添加</button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+
+		</form>
+	</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_common.js"></script>
+<!-- 时间控件 -->
+<script src="__PUBLIC__/common/js/calendar.js"></script>
+		<script>
+		    $('#ca').calendar({
+		        width: 320,
+		        height: 320,
+		        data: [
+					{
+					  date: '2015/12/24',
+					  value: 'Christmas Eve'
+					},
+					{
+					  date: '2015/12/25',
+					  value: 'Merry Christmas'
+					},
+					{
+					  date: '2016/01/01',
+					  value: 'Happy New Year'
+					}
+				],
+		    });
+            $('#start_times').calendar({
+		        trigger: '#start_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });   
+		</script>
+<!-- 时间控件 -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+    <div class="singlePage">
+        <div class="mainBox">
+            <div id="zcChat" class="zcChat" style="border:0;">
+                <div id="header" class="header h40" style="background: rgb(89, 98, 115);color: #fff;position: relative;">
+                    <div class="infoBar">
+                       
+                       <span class="robotName">{$quest_part['send_name']}</span>
+
+                          <div class="nav" style="float: right;margin-top: 0px;font-size: 25px;">
+                            <span class="close_ball" onclick="chat_ball_close()" style="padding: 10px; width:20px;height: 20px;cursor: pointer;position: absolute;right: 0;top: 0px;">×</span>
+                          </div>
+                    </div>
+                    
+                </div>
+                <div id="chatPanel" class="chatPanel chatPanel-scroll">
+                    <ul id="chatPanelList" class="chatPanelList" style="min-height: 435px;list-style: none;">
+                      <p id="historyTrigger" class="msgData">
+                        <!-- <span style="cursor: pointer;">点击加载历史记录</span> -->
+                      </p>
+                    <if condition="$quest_part['send_datetime']">
+                      <li class="clearfix">
+                        <p class="msgData"><php>echo date('Y-m-d H-i-s',$quest_part['send_datetime'])</php></p>
+                      </li>
+                    </if>  
+                    <if condition="$quest_part['send_content']">
+                      <li class="clearfix magBox leftMsg">
+                        <p class="leftName">{$quest_part['send_name']}</p>
+                        <div class="msgDiv">
+                          <div class="msgText">{$quest_part['send_content']}</div>
+                        </div>
+                      </li>
+                    </if>
+                    <if condition="$quest_part['put_content']">
+                      <li class="clearfix magBox rightMsg">
+                        <p class="leftName">{$quest_part['put_name']}</p>
+                        <div class="msgDiv">
+                          <div class="msgText">{$quest_part['put_content']}</div>
+                        </div>
+                      </li>
+                    </if>
+                  
+                      
+                      
+                      
+                    </ul>
+                </div>
+                <div id="footer" class="footer" style="display: block;">
+                    <div class="footer-on">
+                        <div class="text-layout">
+                            <textarea onkeydown="if (event.ctrlKey && event.keyCode==13) {put_word({$quest_part['id']},document.getElementById('inputMsg').value)}" style="overflow: auto;" cols="50" rows="5" id="inputMsg" class="text grey"></textarea>
+                        </div>
+                        <div class="powBox">
+                            
+                            <button onclick="put_word({$quest_part['id']},document.getElementById('inputMsg').value)" type="button" class="btn send-btn" id="sendBtn" style="color: rgb(255, 255, 255); background: rgb(89, 98, 115);">
+                                发送
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      function keydown(event) {
+        if (event.ctrlKey && event.keyCode==13) {
+          console.log(event.keyCode);
+        }
+        
+      }
+    </script>

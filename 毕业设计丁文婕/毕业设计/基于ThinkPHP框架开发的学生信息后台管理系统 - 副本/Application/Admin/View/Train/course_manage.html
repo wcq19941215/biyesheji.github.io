@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list_page.css"/>
+<!-- 分页样式 -->
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('/Admin/index/trainCourseManage')}">课程管理</a></li>
+        <li><a href="{:U('/Admin/index/trainCourseAdd')}" >添加课程</a></li>
+    </ul>
+    <form name="data_list" method="post" class="js-ajax-form" novalidate="novalidate">
+      <include file="Train:Assis/course_list_mast"/>  
+    </form>
+</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_common.js"></script>
+<script>
+    	$(function(){
+    		data_toggle_tooltip();
+    	});
+    </script>
+</body>
+</html>

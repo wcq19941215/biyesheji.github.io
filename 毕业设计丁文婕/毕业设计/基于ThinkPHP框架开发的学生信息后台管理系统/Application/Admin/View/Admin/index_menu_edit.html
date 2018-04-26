@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://www.thinkcmfx.com/index.php/Admin/nav/add/cid/1 -->
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+		.table-list{margin-bottom: 0px;}
+	</style>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<![endif]-->
+	<include file="Assis:init_css"/>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/indexMenuManage')}">菜单管理</a></li>
+			<li><a href="{:U('/Admin/index/indexMenuAdd')}">添加菜单</a></li>
+			<li class="active"><a href="{:U('/Admin/index/indexMenuEdit')}">编辑管理</a></li>
+		</ul>
+		<form id="edit_index_menu" name="edit_index_menu" action="{:U('/Admin/Menu/editIndexMenuList')}" method="post" class="form-horizontal js-ajax-form" novalidate="novalidate">
+		 <input type="hidden" name="menu_id" value="{$index_menu_find['id']}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">菜单分类</label>
+					<div class="controls">
+						<select name="cid" id="navcid_select">
+							<option value="1" selected="">主导航</option>
+							<!-- <option value="3">erji</option> -->
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">父级</label>
+					<div class="controls">
+						<select name="parentid">
+							<option value="0">/</option>
+						  
+						  <for start="0" end="count($index_menu_list)">
+						   <if condition="$index_menu_find['pid'] eq $index_menu_list[$i]['id']">
+						   	<option selected="selected" value="{$index_menu_list[$i]['id']}">{$index_menu_list[$i]['menu_name']}</option>
+						   <else/>
+						  	<option value="{$index_menu_list[$i]['id']}">{$index_menu_list[$i]['menu_name']}</option>
+						   </if>
+						  </for>
+							
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">标签</label>
+					<div class="controls">
+						<input type="text" name="label" aria-required="true" value="{$index_menu_find['menu_name']}" required=""><span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">链接</label>
+					<div class="controls">
+						<!-- <input type="radio" name="nav" id="outlink_radio" checked="checked"/> -->
+						<input type="text" name="url" id="outlink_input" value="{$index_menu_find['url']}" class="valid" aria-invalid="false">
+						<!-- <input type="radio" name="nav" id="selecturl_radio" checked="checked"/> -->
+						<!-- <select id="selecthref" class="valid" aria-invalid="false" name="href">
+							<option value="aG9tZQ==">首页</option>
+							<optgroup label="文章分类">
+								<option value="YToyOntzOjY6ImFjdGlvbiI7czoxNzoiUG9ydGFsL0xpc3QvaW5kZXgiO3M6NToicGFyYW0iO2E6MTp7czoyOiJpZCI7czoxOiIyIjt9fQ==">瀑布流</option>
+								<option value="YToyOntzOjY6ImFjdGlvbiI7czoxNzoiUG9ydGFsL0xpc3QvaW5kZXgiO3M6NToicGFyYW0iO2E6MTp7czoyOiJpZCI7czoxOiIxIjt9fQ==">&nbsp;&nbsp;└─ 列表演示</option>
+								<option value="YToyOntzOjY6ImFjdGlvbiI7czoxNzoiUG9ydGFsL0xpc3QvaW5kZXgiO3M6NToicGFyYW0iO2E6MTp7czoyOiJpZCI7czoxOiIzIjt9fQ==">牙山资源</option>
+								<option value="YToyOntzOjY6ImFjdGlvbiI7czoxNzoiUG9ydGFsL0xpc3QvaW5kZXgiO3M6NToicGFyYW0iO2E6MTp7czoyOiJpZCI7czoxOiI0Ijt9fQ==">图片</option>
+							</optgroup>
+							<optgroup label="页面">
+								<option value="YToyOntzOjY6ImFjdGlvbiI7czoxNzoiUG9ydGFsL1BhZ2UvaW5kZXgiO3M6NToicGFyYW0iO2E6MTp7czoyOiJpZCI7czoxOiIyIjt9fQ==">rweyhwe</option>
+								<option value="YToyOntzOjY6ImFjdGlvbiI7czoxNzoiUG9ydGFsL1BhZ2UvaW5kZXgiO3M6NToicGFyYW0iO2E6MTp7czoyOiJpZCI7czoxOiIzIjt9fQ==">resour</option>
+							</optgroup>
+						</select> -->
+					</div>
+				</div>
+
+				<!-- <div class="control-group">
+					<label class="control-label">打开方式</label>
+					<div class="controls">
+						<select name="target">
+							<option value="">默认</option>
+							<option value="_blank">新窗口打开</option>
+						</select>
+					</div>
+				</div> -->
+
+				<!-- <div class="control-group">
+					<label class="control-label">图标</label>
+					<div class="controls">
+						<input type="text" name="icon" value="">
+					</div>
+				</div> -->
+
+				<!-- <div class="control-group">
+					<label class="control-label">状态</label>
+					<div class="controls">
+						<select name="status">
+							<option value="1">显示</option>
+							<option value="0">隐藏</option>
+						</select>
+					</div>
+				</div> -->
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="button" onclick="edit_menu_list()" class="btn btn-primary js-ajax-submit">修改</button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+
+		</form>
+	</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_menu.js"></script>
+</body>
+</html>

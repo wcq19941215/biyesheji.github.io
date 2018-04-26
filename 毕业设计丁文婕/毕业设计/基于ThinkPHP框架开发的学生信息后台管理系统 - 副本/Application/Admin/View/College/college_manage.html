@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list_page.css"/>
+<!-- 分页样式 -->
+<!-- 时间控件 -->
+<link rel="stylesheet" href="__PUBLIC__/common/css/calendar.css">
+<style type="text/css">
+.calendar ul, .calendar ol, .calendar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<!-- 时间控件 -->
+<include file="Assis:init_js"/>
+
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="{:U('/Admin/index/collegeManage')}" >高考信息管理</a></li>
+		<li><a href="{:U('/Admin/index/collegeSchoolAdd')}" >添加学校</a></li>
+		<li><a href="{:U('/Admin/index/collegeMajorAdd')}" >添加专业</a></li>
+		<li><a href="{:U('/Admin/index/collegeGradeAdd')}" >添加分数</a></li>
+		<li><a href="{:U('/Admin/index/collegeLevelAdd')}" >添加层次</a></li>
+	</ul>
+		
+	<form name="sel_article" class="well form-search" action="{:U('/Admin/index/articleManage')}" method="post">
+	    分类： 
+		<select name="term" style="width: 200px;">
+			<option value="0">全部</option>
+		   <for start="0" end="count($index_menu_list)">
+		   	<option value="{$index_menu_list[$i]['id']}">{$index_menu_list[$i]['menu_name']}</option>
+		   </for>
+			
+		</select> &nbsp;&nbsp;
+		时间：
+		<input type="text" id="start_time" name="start_time" class="js-datetime date" value="" style="width: 120px;" autocomplete="off">
+        <include file="Assis:start_times"/>
+		-
+		<input type="text" id="end_time" class="js-datetime date" name="end_time" value="" style="width: 120px;" autocomplete="off">
+        <include file="Assis:end_times"/>
+		 &nbsp; &nbsp;
+		关键字： 
+		<input type="text" name="title" style="width: 200px;" value="" placeholder="请输入标题...">
+		<input type="button" onclick="sel_article_list()" class="btn btn-primary" value="搜索">
+		<input type="reset" class="btn btn-danger" value="清空">
+	</form>
+		
+	<form name="article_list" class="js-ajax-form" novalidate="novalidate">
+		<!-- <include file="College:college_list_mast"/> -->
+	</form>
+</div>
+
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_college.js"></script>
+<!-- 时间控件 -->
+<script src="__PUBLIC__/common/js/calendar.js"></script>
+		<script>
+		    $('#ca').calendar({
+		        width: 320,
+		        height: 320,
+		        data: [
+					{
+					  date: '2015/12/24',
+					  value: 'Christmas Eve'
+					},
+					{
+					  date: '2015/12/25',
+					  value: 'Merry Christmas'
+					},
+					{
+					  date: '2016/01/01',
+					  value: 'Happy New Year'
+					}
+				],
+		    });
+            $('#start_times').calendar({
+		        trigger: '#start_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });
+		    $('#end_times').calendar({
+		        trigger: '#end_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });
+         
+		    
+		</script>
+<!-- 时间控件 -->
+   <script>
+   
+    	$(function(){
+    		data_toggle_tooltip();
+    	});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+
+<!-- 文本编辑框的css和js start -->
+<link rel="stylesheet" href="/kind/themes/default/default.css"/>
+<link rel="stylesheet" href="/kind/plugins/code/prettify.css"/>
+<script charset="utf-8" src="/kind/kindeditor.js"></script>
+<script charset="utf-8" src="/kind/lang/zh_CN.js"></script>
+<script charset="utf-8" src="/kind/plugins/code/prettify.js"></script>
+<script>
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content"]', {
+				cssPath : '/kind/plugins/code/prettify.css',
+				uploadJson : '/kind/php/upload_json.php',
+				fileManagerJson : '/kind/php/file_manager_json.php',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+				},
+				afterBlur:function(){this.sync();}
+			});
+			prettyPrint();
+		});
+</script>
+<style type="text/css">
+.ke-dialog-row{
+	margin: 0px;
+}
+.ke-dialog-row .ke-input-text{
+	color: #000;
+	background-color: #fff;
+}
+</style>
+<!-- 文本编辑框的css和js end -->
+<style type="text/css">
+.one_img_uplode{
+border: 1px solid #696;padding: 60px 0;text-align: center; width: 200px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: #666 0px 0px 10px;
+-moz-box-shadow: #666 0px 0px 10px;
+}
+
+</style>
+<!-- 时间控件 -->
+<link rel="stylesheet" href="__PUBLIC__/common/css/calendar.css">
+<style type="text/css">
+.calendar ul, .calendar ol, .calendar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<!-- 时间控件 -->
+</head>
+
+
+<body>
+<include file="Assis:add_article_ball"/>
+
+
+
+
+
+<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/articleManage')}" >文章管理</a></li>
+			<li class="active"><a href="{:U('/Admin/index/addArticle')}" >添加文章</a></li>
+		</ul>
+		<form name="example" action="/Admin/index/upload_article" method="post" class="form-horizontal js-ajax-forms" id="upload_article" enctype="multipart/form-data" novalidate="novalidate">
+			<div class="row-fluid">
+				<div class="span9">
+					<table class="table table-bordered">
+						<tbody><tr>
+							<th width="80">分类</th>
+							<td>
+								<select multiple="multiple" style="max-height: 100px;" name="term[]">
+								
+                                 <for start="0" end="count($index_menu_list)">
+		   	                      <option value="{$index_menu_list[$i]['id']}">{$index_menu_list[$i]['menu_name']}</option>
+		                         </for>
+
+								 </select>
+								 <div>windows：按住 Ctrl 按钮来选择多个选项,Mac：按住 command 按钮来选择多个选项</div>
+							</td>
+						</tr>
+						<tr>
+							<th>标题</th>
+							<td>
+								<input type="text" style="width:400px;" name="post[title]" id="title" required="" value="" placeholder="请输入标题" aria-required="true">
+								<span class="form-required">*</span>
+							</td>
+						</tr>
+						<tr>
+							<th>关键词</th>
+							<td><input type="text" name="post[keywords]" id="keywords" value="" style="width: 400px" placeholder="请输入关键字"> 多关键词之间用空格或者英文逗号隔开</td>
+						</tr>
+						<tr>
+							<th>文章来源</th>
+							<td><input type="text" name="post[source]" id="source" value="" style="width: 400px" placeholder="请输入文章来源"></td>
+						</tr>
+						<tr>
+							<th>作者</th>
+							<td><input type="text" name="post[author]" id="author" value="" style="width: 400px" placeholder="请输入作者"></td>
+						</tr>
+						<tr>
+							<th>摘要</th>
+							<td>
+								<textarea name="post[excerpt]" id="description" style="width: 98%; height: 50px;" placeholder="请填写摘要"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>内容</th>
+							<td>
+							  <textarea name="content" style="width:99%;height:200px;visibility:hidden;"></textarea>
+                               
+							</td>
+						</tr>
+						<tr>
+							<th>相册图集</th>
+							<td>
+								<ul id="photos" class="pic-list unstyled">
+
+								  <!-- <li id="savedimageo_1b4b1b6dk1tf7pqa6agb1s1qjp7" style="margin-bottom: 5px;">
+		                            <input id="photo-o_1b4b1b6dk1tf7pqa6agb1s1qjp7" type="hidden" name="photos_url[]" value="http://static.zongheng.com/upload/cover/2015/09/1442986931604.jpg"> 
+
+		                            <input id="photo-o_1b4b1b6dk1tf7pqa6agb1s1qjp7-name" type="text" name="photos_alt[]" value="正小.jpg" style="width: 160px;" title="图片名称">
+
+		                            <img id="photo-o_1b4b1b6dk1tf7pqa6agb1s1qjp7-preview" src="http://static.zongheng.com/upload/cover/2015/09/1442986931604.jpg" style="height:36px;width: 36px;" onclick="parent.image_preview_dialog(this.src);">
+
+		                            <a href="javascript:upload_one_image('图片上传','#photo-o_1b4b1b6dk1tf7pqa6agb1s1qjp7');">替换</a>
+		                            
+		                            <a href="javascript:$('#savedimageo_1b4b1b6dk1tf7pqa6agb1s1qjp7').remove();">移除</a>
+
+	                               </li> -->
+
+	                               
+
+
+
+								</ul>
+								<a href="javascript:;" onclick="upload_open('.aui_state_lock_photos')" class="btn btn-small">选择图片</a>
+							</td>
+						</tr>
+					    </tbody>
+				    </table>
+				</div>
+
+				<div class="span3">
+					<table class="table table-bordered">
+						<tbody>
+						  <tr>
+							<th><b>缩略图</b></th>
+						  </tr>
+						  <tr>
+							<td>
+							  <div style="text-align: center;">
+							    <input type="hidden" name="post[thumb]" id="thumb" value="/Public/common/default_img/default-thumbnail.png">
+							    
+							    
+							      <img onclick="upload_open('.aui_state_lock')" src="__PUBLIC__/common/default_img/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: pointer;">
+							  
+							    <input type="button" class="btn btn-small" onclick="call_img($(this))" value="取消图片">
+							  </div>
+							</td>
+						  </tr>
+
+						  <tr>
+							<th><b>发布时间</b></th>
+						  </tr>
+
+						  <tr>
+							<td><input type="text" id="start_time" name="post[datetime]" value="<?php echo date('Y-m-d H:i:s');?>" class="js-datetime date" style="width: 160px;">
+                             <include file="Assis:start_times"/>
+							</td>
+						  </tr>
+
+						  <tr>
+							<th><b>状态</b></th>
+						  </tr>
+
+						  <tr>
+							<td>
+							  <label class="radio"><input type="radio" name="post[status]" value="1" checked="">审核通过</label>
+							  <label class="radio"><input type="radio" name="post[status]" value="0">待审核</label>
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							  <label class="radio"><input type="radio" name="post[istop]" value="1">置顶</label>
+							  <label class="radio"><input type="radio" name="post[istop]" value="0" checked="">未置顶</label>
+						    </td>
+						  </tr>
+						  <tr>
+							  <td>
+								<label class="radio"><input type="radio" name="post[recommended]" value="1">推荐</label>
+								<label class="radio"><input type="radio" name="post[recommended]" value="0" checked="">未推荐</label>
+							  </td>
+						  </tr>
+						  <tr>
+						    <td>
+							  <label class="radio"><input type="radio" name="post[is_index_banner]" value="1">为首页banner</label>
+							  <label class="radio"><input type="radio" name="post[is_index_banner]" value="0" checked="">未设置</label>
+						    </td>
+						  </tr>
+
+						  <tr>
+							  <th>文章模板</th>
+						  </tr>
+
+						  <tr>
+							 <td>
+							   <input type="text" name="post[mast]" style="width: 160px;"></td>
+							  <!-- <select style="min-width: 190px;" name="post[template]">
+							  	<option value="">请选择模板</option>
+								<option value="article">article.html</option><option value="contact">contact.html</option><option value="index">index.html</option><option value="list">list.html</option>
+								<option value="list_masonry">list_masonry.html</option><option value="search">search.html</option>
+							  </select> -->
+							 </td>
+						  </tr>
+					   </tbody>
+				    </table>
+				</div>
+			</div>
+
+			<div class="form-actions">
+				<a class="btn btn-primary js-ajax-submit" href="javascript:ajax_post_article()">提交</a>
+				<a class="btn" href="javascript:;">返回</a>
+				<!-- <button class="btn btn-primary js-ajax-submit" type="submit">提交1</button> -->
+			</div>
+		</form>
+</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_article.js"></script>
+<!-- 时间控件 -->
+<script src="__PUBLIC__/common/js/calendar.js"></script>
+		<script>
+		    $('#ca').calendar({
+		        width: 320,
+		        height: 320,
+		        data: [
+					{
+					  date: '2015/12/24',
+					  value: 'Christmas Eve'
+					},
+					{
+					  date: '2015/12/25',
+					  value: 'Merry Christmas'
+					},
+					{
+					  date: '2016/01/01',
+					  value: 'Happy New Year'
+					}
+				],
+		    });
+            $('#start_times').calendar({
+		        trigger: '#start_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });   
+		</script>
+<!-- 时间控件 -->
+
+</body>
+</html>

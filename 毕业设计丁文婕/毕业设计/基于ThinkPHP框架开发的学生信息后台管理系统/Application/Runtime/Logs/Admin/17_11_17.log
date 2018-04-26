@@ -1,0 +1,201 @@
+[ 2017-11-17T20:46:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AdminUserInfo D:\WWW\demo1\Application\Admin\Controller\AdminUserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-17T20:46:56+08:00 ] 127.0.0.1 /Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:46:56+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:47:14+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `user` = 'admin' AND `pwd` = 'a2d2c23bddf78cfdef35a1ca78adab05' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: UPDATE `yxblog_admin_user_record` SET `session`='fompk0afvi2ekgg4ornb3egr24' WHERE `uid` = null [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-17T20:47:16+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.7297938713490786
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:47:19+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.5535422586021344
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:47:27+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `user` = 'admin' AND `pwd` = 'a2d2c23bddf78cfdef35a1ca78adab05' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: UPDATE `yxblog_admin_user_record` SET `session`='fompk0afvi2ekgg4ornb3egr24' WHERE `uid` = null [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:47:28+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.9909572629155201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:48:05+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `user` = 'admin' AND `pwd` = '3e7ef2d52d4916ea428fd42daebd4a16' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: UPDATE `yxblog_admin_user_record` SET `session`='fompk0afvi2ekgg4ornb3egr24' WHERE `uid` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-11-17T20:48:06+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-17T20:48:07+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: SYSTEMROOT D:\WWW\demo1\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 110 行.
+NOTIC: [8] Undefined index: PHP_FCGI_MAX_REQUESTS D:\WWW\demo1\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 115 行.
+NOTIC: [8] Undefined index: PHPRC D:\WWW\demo1\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 116 行.
+NOTIC: [8] Undefined index: _FCGI_SHUTDOWN_EVENT_ D:\WWW\demo1\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 117 行.
+NOTIC: [8] Undefined index: HTTP_ACCERT D:\WWW\demo1\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+NOTIC: [8] Undefined index: FCGI_ROLE D:\WWW\demo1\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

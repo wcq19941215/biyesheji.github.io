@@ -1,0 +1,46 @@
+        <input id="current_url" type="hidden" name="current_url" value="{$current_url}" />
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+                <th width="50">ID</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>生日</th>
+                <th>手机号</th>
+                <th>地址</th>
+                <th>来源</th>
+                <th>费用</th>
+                <th>上课班级</th>
+                <th>上课状态</th>
+                <th>备注</th>
+                <th width="120">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <for start="0" end="count($data_list)">
+                <tr>
+                    <td>{$data_list[$i]['id']}</td>
+                    <td>{$data_list[$i]['name']}</td>
+                    <td>{$data_list[$i]['sex']}</td>
+                    <td>{:date('Y-m-d',$data_list[$i]['birth'])}</td>
+                    <td>{$data_list[$i]['phone']}</td>
+                    <td>{$data_list[$i]['site']}</td>
+                    <td>{$data_list[$i]['source']}</td>
+                    <td>{$data_list[$i]['money']}</td>
+                    <td>{$data_list[$i]['begins']}</td>
+                    <td>{$student_status[$data_list[$i]['status']]}</td>
+                    <td>{$data_list[$i]['ramark']}</td>
+                    <td>
+                      <a href="javascript:;">退学</a>
+                      |<a href="javascript:;">编辑</a>
+                      |<a href="javascript:;" onclick='del_article({$article_list[$i]["id"]},$(this))' class="js-ajax-delete">删除</a>
+                    </td>
+                </tr>
+            </for>
+
+            
+          </tbody>
+      </table> 
+      <div id="page" class="wp-paginate">
+                {$page}
+      </div>

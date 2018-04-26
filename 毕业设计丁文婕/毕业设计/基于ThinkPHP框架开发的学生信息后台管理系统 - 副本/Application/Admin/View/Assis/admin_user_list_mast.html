@@ -1,0 +1,29 @@
+            <table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>用户名</th>
+						<th>昵称</th>
+						<th>状态</th>
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				  <for start="0" end="count($admin_user_list)">
+				  	<tr>
+						<td align="center">{$admin_user_list[$i]["id"]}</td>
+						<td>{$admin_user_list[$i]["user"]}</td>
+						<td>{$admin_user_list[$i]["user_name"]}</td>
+						<td></td>
+						<td align="center">
+						<a href="javascript:;">拉黑</a>|
+						<a href="javascript:;">启用</a>|
+						<a href="{:U('/Admin/index/adminUserExaJuris',array('id'=>$admin_user_list[$i]['id']))}">权限</a></td>
+					</tr>
+				  </for>
+								
+				</tbody>
+			</table>
+		        <div id="page" class="wp-paginate">
+             	   {$page}
+                </div>

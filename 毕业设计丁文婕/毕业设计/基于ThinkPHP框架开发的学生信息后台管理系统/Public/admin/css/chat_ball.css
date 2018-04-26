@@ -1,0 +1,2410 @@
+.nav .close_ball:hover{
+    background-color: #09aeb0;
+
+}
+.singlePage {
+	font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.clearfix {
+	*zoom: 1
+}
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+	clear: both;
+}
+.pa {
+	position: absolute;
+}
+.pr {
+	position: relative;
+}
+.fl {
+	float: left;
+	display: inline;
+}
+.fr {
+	float: right;
+	display: inline;
+}
+.pt3 {
+	padding-top: 3px;
+}
+.pt12 {
+	padding-top: 12px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mt8 {
+	margin-top: 8px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt35 {
+	margin-top: 35px;
+}
+.mt50 {
+	margin-top: 50px;
+}
+.mb35 {
+	margin-bottom: 35px;
+}
+.mr5 {
+	margin-right: 5px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mr20 {
+	margin-right: 20px;
+}
+.mr30 {
+	margin-right: 30px;
+}
+.mr35 {
+	margin-right: 35px;
+}
+.mr50 {
+	margin-right: 50px;
+}
+.mr60 {
+	margin-right: 60px;
+}
+.ml5 {
+	margin-left: 5px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml18 {
+	margin-left: 18px;
+}
+.ml25 {
+	margin-left: 25px;
+}
+.ml30 {
+	margin-left: 30px;
+}
+.ml35 {
+	margin-left: 35px;
+}
+.ml50 {
+	margin-left: 55px;
+}
+.ml60 {
+	margin-left: 60px;
+}
+.tr {
+	text-align: right;
+}
+.tc {
+	text-align: center;
+}
+.f12 {
+	font-size: 14px;
+}
+.f13 {
+	font-size: 12px;
+}
+.f14 {
+	font-size: 14px;
+}
+.f16 {
+	font-size: 16px;
+}
+.f18 {
+	font-size: 18px;
+}
+.f24 {
+	font-size: 24px;
+}
+.fb {
+	font-weight: bold;
+}
+.white {
+	color: #fff;
+}
+.grey9 {
+	color: #999;
+}
+.grey6 {
+	color: #858282;
+}
+.lh20 {
+	line-height: 20px;
+}
+.lh24 {
+	line-height: 24px;
+}
+.bgCli {
+	background: #c4e0fd;
+}
+.bgSer {
+	background: #f0f0f0;
+}
+.bgNot {
+	background: #FBF8EA;
+	color: #999;
+}
+.h {
+	height: 100%;
+}
+.h20 {
+	height: 20px;
+}
+.h50 {
+	height: 50px;
+}
+.h60 {
+	height: 60px;
+}
+.h80 {
+	height: 105px;
+}
+.h280 {
+	height: 280px;
+}
+.lh50 {
+	line-height: 50px;
+}
+.w {
+	width: 100%;
+}
+.w40 {
+	width: 40px;
+}
+.w90 {
+	width: 90px;
+}
+.bgGrey {
+	background: #edeff2;
+}
+.header, .footer, #online-loading {
+	/*position: absolute;
+	 z-index: 110;
+	 left: 0;
+	 width: 100%;*/
+}
+.header {
+	position: relative;
+	/*top: 0;
+	 box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+	 height: 59px;
+	 position: absolute;
+	 top: 1px;
+	 left: 1px;
+	 right: 1px;*/
+}
+.systemBox {
+	width: 100%;
+	height: 30px;
+	background: #ddecfc;
+	display: none;
+}
+.cent {
+	text-align: center;
+	font-size: 12px;
+	color: #258efa;
+	padding-top: 7px;
+}
+.colorder {
+	color: #e60d0d;
+}
+
+.footer {
+	background: #fff;
+	display: none;
+	height: 105px;
+	border-top: 1px solid #d9d9d9;
+	box-sizing: border-box;
+}
+.footerON .footer-on {
+	display: inline-block;
+}
+.footerON .footer-off {
+	display: none;
+}
+.footerOFF .footer-on {
+	display: none;
+}
+.footerOFF .footer-off {
+	display: inline-block;
+}
+
+.footer-on {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.footer-off {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.footer-off .block {
+	/*width: 33.33333333%;*/
+	height: 100%;
+	/*display: inline-block;*/
+	display: none;
+	box-sizing: border-box;
+	vertical-align: middle;
+	float: left;
+	text-align: center;
+}
+.blocks-one .block {
+	width: 100%;
+}
+.blocks-two .block {
+	width: 50%;
+}
+.blocks-three .block {
+	width: 33.33333333%;
+}
+
+.footer-off .block span {
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	/*padding: 15px 0 0;*/
+	text-align: center;
+	cursor: pointer;
+}
+.footer-off .block .block-1 {
+	background-position: -300px 0;
+}
+.footer-off .block .block-2 {
+	background-position: -340px 0;
+}
+.footer-off .block .block-3 {
+	background-position: -380px 0;
+}
+.footer-off .block .block-text {
+	color: #929292;
+}
+#online-loading {
+	top: 50%;
+	height: 16px;
+	text-align: center;
+	margin-top: -8px;
+	display: none;
+}
+#online-loading img {
+	border: 0;
+}
+.face-md {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+.head-md {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.head-big {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%
+}
+.chatPanel {
+	color: #333;
+	position: relative;
+}
+.chatPanel a {
+	color: #4298ba;
+}
+.chatPanel a:hover {
+	color: #0088ad;
+	text-decoration: underline;
+}
+/*.chatPanel ul {
+ padding: 0 15px;
+ }
+ .chatPanel li {
+ margin-top: 10px;
+ }*/
+.chatPanel .msg {
+	margin-top: 5px;
+	word-wrap: break-word;
+	word-break: break-all;
+	*overflow: hidden;
+}
+.chatPanel .ser-msg {
+	margin-left: 10px;
+}
+.chatPanel .cli-msg {
+	margin-right: 10px;
+}
+.chatPanel .msg-con {
+	/*overflow: hidden;*/
+	margin-right: 10px;
+	max-width: 80%;
+	min-width: 20px;
+	min-height: 18px;
+	color: #5f5e5e;
+	position: relative;
+	padding: 8px 10px;
+	display: inline-block;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 22px;
+	*top: 3px;
+	*min-width: 18px;
+	*width: 350px;
+}
+
+/*.chatPanel .ser-msg:before {
+ content: "";
+ width: 0;
+ border-style: solid;
+ border-color: transparent red;
+ border-width: 12px 12px 12px 0px;left: -10px;
+ }*/
+
+.chatPanel .msg-img-con {
+	padding: 2px;
+	font-size: 0;
+}
+/* .chatPanel .ser-msg .msg-con {
+ border-top-left-radius: 0
+ } */
+.chatPanel .cli-msg .msg-con {
+	border-bottom-right-radius: 0;
+}
+.chatPanel .img-con {
+	min-width: 120px;
+	min-height: 30px;
+	_width: 100px;
+	_height: 20px;
+}
+
+.arrow-br {
+	width: 0;
+	border-style: solid;
+	border-color: transparent #c4e0fd;
+	top: 12px;
+	content: "";
+	position: absolute;
+	border-width: 0px 0px 12px 12px;
+	right: -12px;
+	_display: none;
+	*display: none;
+}
+.arrow-tl {
+	width: 0;
+	border-style: solid;
+	border-color: transparent #f0f0f0;
+	top: 12px;
+	content: "";
+	position: absolute;
+	border-width: 0px 12px 12px 0px;
+	left: -12px;
+	_display: none;
+	*display: none;
+}
+.msg-status {
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	bottom: 0;
+	left: -25px;
+	margin-top: -8px;
+	line-height: 10px;
+}
+.status-success, .status-error {
+	display: inline-block;
+	width: 16px;
+	height: 10px;
+	background-repeat: no-repeat;
+}
+.status-success {
+	background-position: -16px 0;
+}
+.status-error {
+	background-position: -32px 0;
+}
+.ipt-status {
+	display: inline-block;
+	position: absolute;
+	font-size: 12px;
+	width: 60px;
+	top: 50%;
+	left: 100%;
+	margin-top: -10px;
+	margin-left: 5px;
+}
+#success-btn {
+	width: 130px;
+}
+.notice {
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	padding: 5px 10px;
+	z-index: 9999999;
+	border-radius: 5px;
+	color: #9F9876;
+	background: #FBF8EA;
+	border: 1px solid #D5CEAF;
+}
+#notice_bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background: #f6bc66;
+	z-index: 90;
+	opacity: 0.95;
+	filter: alpha(opacity=95);
+	display: none;
+}
+#leaveTips, #leaveTips .tips-shadow, #leaveTips .tips-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	display: none;
+}
+#leaveTips {
+	z-index: 121;
+}
+#leaveTips .tips-shadow {
+	background: #000;
+	opacity: 0.08;
+	filter: alpha(opacity=8);
+}
+#leaveTips .tips-title {
+	top: 50%;
+	height: 20px;
+	color: #e66b62;
+	margin-top: -10px;
+	text-align: center;
+	display: none;
+}
+.chatPanel {
+	/*border-left: 1px solid #d9d9d9;
+	 border-right: 1px solid #d9d9d9;*/
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 360px;
+	width: auto;
+	padding: 0;
+	margin-right: -20px;
+	color: #333;
+	position: relative;
+}
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+.icon-voice, .icon-mute, .icon-max, .icon-min, .icon-contact {
+	width: 10px;
+	height: 10px;
+}
+.icon-voice {
+	background-position: -1px 0;
+}
+a:hover .icon-voice {
+	background-position: -45px 0;
+}
+.icon-mute {
+	background-position: -33px 0;
+}
+a:hover .icon-mute {
+	background-position: -77px 0;
+}
+.icon-max {
+	background-position: -12px 0;
+}
+a:hover .icon-max {
+	background-position: -56px 0;
+}
+.icon-min {
+	background-position: -23px 0;
+}
+a:hover .icon-min {
+	background-position: -67px 0;
+}
+.icon-face, .icon-img, .icon-mail, .icon-mail-2, .icon-qq, .icon-phone {
+	width: 17px;
+	height: 17px;
+}
+.icon-face {
+	background-position: -1px -25px;
+}
+.icon-face:hover {
+	background-position: -103px -25px;
+}
+.icon-img {
+	background-position: -18px -25px;
+}
+
+.icon-mail {
+	background-position: -32px -25px;
+	margin-top: 1px;
+	*margin-top: 0;
+}
+.icon-mail-2 {
+	background-position: -80px -24px;
+}
+.icon-qq {
+	background-position: -48px -24px;
+	padding-top: 3px;
+	*padding-top: 0;
+}
+.icon-phone {
+	background-position: -64px -24px;
+}
+.icon-contact {
+	width: 16px;
+	height: 14px;
+	display: none;
+	background-position: 0 -10px;
+}
+
+.infoBar {
+	padding: 10px 0;
+	margin-left: 12px;
+}
+.infoBarText{float:left;margin-left:16px;}
+.infoBar .infoBarLogo {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	vertical-align: middle;
+	float: left;
+}
+.infoBarName .robotName {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 24px;
+	z-index: 101;
+	height: 20px;
+	width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.infoBarName .icon-contact {
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	margin-top: -8px;
+	cursor: pointer;
+}
+.infoBarCompany {
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	*width: 140px;
+}
+.arrow-tc {
+	position: absolute;
+	height: 0;
+	width: 0;
+	font-size: 0;
+	bottom: -10px;
+	right: -22px;
+	margin-left: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	z-index: 101;
+	display: none;
+}
+
+.zcChat {
+	/*border: 1px solid transparent;*/
+	/*border-top: none;
+	 border-bottom: none;*/
+	border:none;
+	overflow: hidden;
+	position: relative;
+	border: solid 1px #d9d9d9;
+	/*height: 100%;*/
+}
+
+.zcChat .arrow-tc {
+	*border-left: 10px solid #00c8ab;
+	*border-right: 10px solid #00c8ab;
+}
+.contact {
+	position: absolute;
+	display: inline-block;
+	top: 30px;
+	right: -130px;
+	width: 200px;
+	padding: 5px 0;
+	z-index: 100;
+	color: #666;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 0 10px #ccc;
+	display: none;
+	*border: 1px solid #efefef;
+	border: 1px solid #efefef;
+}
+.contact a {
+	position: relative;
+	display: block;
+	margin: 5px 18px;
+	line-height: 20px;
+	color: #3a7ea5;
+	cursor: pointer;
+}
+.contact i {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	_position: static;
+}
+.contact span {
+	display: block;
+	_display: inline-block;
+	margin-left: 24px;
+	_margin-left: 0;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.contact a:hover {
+	text-decoration: underline;
+}
+.text-layout {
+	margin: 0 10px;
+}
+.text {
+	width: 100%;
+	height: 66px;
+	margin: 5px 0 0;
+	padding: 0;
+	border: 0;
+	color: #999;
+	resize: none;
+	font-size: 12px;
+}
+.text:focus {
+	outline: none;
+}
+.ft-btns {
+	position: relative;
+	height: 40px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.ft-btns a {
+	display: inline-block;
+	margin-top: 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.send-btn {
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	width: 60px;
+	height: 24px;
+	border-radius: 2px;
+	font-size: 12px;
+}
+.send-btn:hover {
+	background: #2aa48b;
+}
+.face-con {
+	position: absolute;
+	width: 300px;
+	height: 102px;
+	left: 0;
+	top: -105px;
+	background: #fff;
+	overflow-y: auto;
+	display: none;
+	box-shadow: 0 0 8px #1ABC9C;
+	border: 1px solid #CCCCCC;
+}
+.face-con ul {
+	margin: 0 6px;
+}
+.face-con li {
+	float: left;
+	margin: 3px;
+}
+.emoji-face {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+.mini-emoji-face {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-size: 72px 180px;
+	background-repeat: no-repeat;
+	background-position: -1px -1px;
+	vertical-align: top;
+}
+
+
+
+.chatPanelList {
+	box-sizing: border-box;
+	/*overflow-y: auto;
+	 overflow-x: hidden;*/
+	overflow: hidden;
+	margin: 0;
+	padding: 0 20px 10px;
+	font-size: 12px;
+	/*margin-left: -20px;
+	 margin-right: 10px;*/
+	min-height: 306px;
+	max-width: 323px;
+	background-color: #FFFFFF;
+}
+.chatPanelList .msgData {
+	text-align: center;
+	font-size: 12px;
+	margin: 10px 0;
+	color: #b1b6b4;
+}
+.chatPanelList .msgData2 {
+	text-align: center;
+	font-size: 12px;
+	margin: 15px 0 10px 0;
+	color: #b1b6b4;
+	border-top: 1px #ccc dashed;
+}
+.chatPanelList .msgData2 span {
+	z-index: 999;
+	margin-top: -7px;
+	display: inline-block;
+	background: #fff;
+	padding: 0 10px;
+}
+
+.chatPanelList li img {
+	max-width: 100%;
+}
+.chatPanelList li .fr {
+	color: #3b3a38;
+}
+.chatPanelList li .bgCli  a {
+	color: #fff;
+	text-decoration: none;
+}
+.funcPanel {
+	line-height: 22px;
+	height: 22px;
+	position: relative;
+}
+
+.funcPanel .chatSwitch, .funcPanel .voiceCalls, .funcPanel .leaveMessage {
+	cursor: pointer;
+	color: #258efa;
+	font-size: 12px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.funcPanel .voiceCalls, .funcPanel .leaveMessage {
+	display: none;
+}
+.funcPanel .addFace:hover {
+	background-position: -68px -1px;
+}
+.funcPanel .upImg:hover {
+	background-position: -22px 0px;
+}
+.funcPanel .hover {
+	background-position: -22px 0px;
+}
+.funcPanel a img {
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 5px;
+	display: none;
+}
+
+/* 相关模式下工具栏的显示 */
+/* 仅机器人模式 */
+.robotOnlyMode .addFace {
+	display: none;
+}
+.robotOnlyMode .upImg {
+	display: none;
+}
+.robotOnlyMode .chatSwitch {
+	display: none;
+}
+.robotOnlyMode .voiceCalls {
+	display: none;
+}
+.robotOnlyMode .leaveMessage {
+	display: block;
+}
+/* 机器人优先模式 */
+.robotMode .addFace {
+	display: none;
+}
+.robotMode .upImg {
+	display: none;
+}
+.robotMode .chatSwitch {
+	display: block;
+}
+.robotMode .voiceCalls {
+	display: none;
+}
+.robotMode .leaveMessage {
+	display: none;
+}
+/* 人工优先模式 */
+.manualMode .addFace {
+	display: inline-block;
+}
+.manualMode .upImg {
+	display: inline-block;
+}
+.manualMode .chatSwitch {
+	display: none;
+}
+.manualMode .voiceCalls {
+	display: block;
+}
+.manualMode .leaveMessage {
+	display: none;
+}
+
+/* 语音通话已提交模式 或 语音通话功能关闭 */
+.voiceMode .addFace {
+	display: inline-block;
+}
+.voiceMode .upImg {
+	display: inline-block;
+}
+.voiceMode .chatSwitch {
+	display: none;
+}
+.voiceMode .voiceCalls {
+	display: none;
+}
+.voiceMode .leaveMessage {
+	display: none;
+}
+
+/* 无客服/排队模式 */
+.manualWaitMode .addFace {
+	display: none;
+}
+.manualWaitMode .upImg {
+	display: none;
+}
+.manualWaitMode .chatSwitch {
+	display: none;
+}
+.manualWaitMode .voiceCalls {
+	display: none;
+}
+.manualWaitMode .leaveMessage {
+	display: inline-block;
+}
+
+#ofile {
+	display: none;
+}
+
+.qqFace {
+	margin-top: 4px;
+	background: #fff;
+	padding: 2px;
+	border: 1px #dfe6f6 solid;
+}
+
+.qqFace table td {
+	padding: 0px;
+}
+
+.qqFace table td img {
+	cursor: pointer;
+	border: 1px #fff solid;
+}
+
+.qqFace table td img:hover {
+	border: 1px #0066cc solid;
+}
+
+.powBox {
+	position: relative;
+	width: 100%;
+	height: 24px;
+}
+
+.pow {
+	color: #d5d4d4;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	display: inline-block;
+}
+.pow a {
+	text-decoration: none;
+	color: #d5d4d4;
+}
+
+.bigImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	padding-top: 50px;
+	background: rgba(0,0,0,0.6);;
+	display: none;
+}
+.bigImg .imgTop {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: 0;
+}
+.bigImg .imgTop .imgReturn {
+	color: #fff;
+	font-size: 16px;
+	line-height: 50px;
+	margin-left: 20px;
+}
+.bigImg .bigImgBox {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+.bigImg .bigImgBox img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+.bigImg .imgTop .imgReturn img {
+	vertical-align: middle;
+	width: 12px;
+	margin-right: 5px;
+	margin-top: -3px;
+}
+
+#header .headBtn {
+	position: absolute;
+	width: 80px;
+	right: 5px;
+	top: 10px;
+	text-align: right;
+}
+#header .headBtn a {
+	width: 11px;
+	height: 11px;
+	background-image: url('../img/bglist.png');
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+#header .headBtn .zhichiVoice {
+	background-position: 0px -30px;
+}
+#header .headBtn .zhichiClose {
+	background-position: -30px -29px;
+}
+#header .headBtn .zhichiMin {
+	background-position: -70px -30px;
+}
+#header .headBtn .zhichiMax {
+	background-position: -85px -30px;
+}
+.chatPanelList .systemMsg {
+	text-align: center;
+	line-height: 26px;
+	margin: 2px 0;
+}
+.chatPanelList .systemMsg span {
+	display: inline-block;
+	padding: 0px 10px;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	color: #B1B5B5;
+}
+.chatPanelList .systemMsg .colorder {
+	margin: 0 3px;
+	padding: 0 0;
+}
+.chatPanelList .systemMsg a {
+	color: #e60d0d;
+	text-decoration: none;
+	line-height: 26px;
+}
+.chatPanelList .stripe {
+	color: #8f8f8f;
+	display: inline-block;
+}
+
+/* loading */
+
+.loader {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 999;
+	left: 0;
+	top: 0;
+}
+.loader img {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -16px 0 0 -16px;
+}
+
+.surveyBox, .allBlackBox {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	z-index: 999;
+	left: 0;
+	top: 0;
+	font-family: "Microsoft Yahei", Arial, sans-serif;
+	display: none;
+}
+.surveyBox .surveyRobot {
+	width: 260px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -140px;
+	border: 1px solid #13c9cb;
+	background-color: #fff;
+	-webkit-transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	display: none;
+	box-shadow: 0px 1px 12px #C7C9CA;
+	border-top: 2px solid #13c9cb;
+	border-radius: 2px;
+}
+.surveyBox .surTop .surTip {
+	color: #a4a3a3;
+	margin-right: 8px;
+}
+.surveyBox .surTop a {
+	color: #13c9cb;
+	display: inline-block;
+	margin: 0 5px;
+}
+.surveyBox .surTop {
+	border-bottom: 1px solid #e3e5e5;
+	line-height: 24px;
+	font-size: 12px;
+	padding-bottom: 8px;
+}
+.surveyBox .surTop .surtipbg {
+	background: url('../img/bglist.png') no-repeat;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background-position: -48px -26px;
+	vertical-align: middle;
+	margin-top: -4px;
+}
+.surveyBox .surmidQus {
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.surveyBox .surmid {
+	text-align: center;
+}
+.surveyBox .surveyRobot .surmid .chackyes {
+	display: inline-block;
+}
+.surveyBox .surveyRobot .surmid .chackyes a {
+	width: 66px;
+	height: 66px;
+	display: inline-block;
+	border-radius: 3px;
+	color: #a4a3a3;
+	margin: 0 10px;
+}
+
+.surveyBox .surveyRobot .surmid .chackyes .checked .spanYes {
+	background-position: -183px -2px;
+}
+.surveyBox .surveyRobot .surmid .chackyes .checked .spanNo {
+	background-position: -120px -2px;
+}
+.surveyBox .surveyRobot .surmid .chackyes a .spanYes {
+	background-position: -149px -2px;
+}
+.surveyBox .surveyRobot .surmid .chackyes a .spanNo {
+	background-position: -96px -2px;
+}
+.surveyBox .surveyRobot .surmid .chackyes a:hover {
+	background-color: #eef2f2;
+}
+.surveyBox .surquick {
+	text-align: center;
+	display: none;
+	-webkit-transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	transition: all .5s cubic-bezier(0.86,0,0.07,1);
+}
+.surveyBox .surquick .surqList span {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 4px;
+	background-color: #f0f0f0;
+	color: #a4a3a3;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.surveyBox .surquick .surquickp1 {
+	line-height: 30px;
+	margin: 10px 0;
+}
+.surveyBox .surquick .surText .surTextInput {
+	resize: none;
+	border: 1px solid #e6e6e6;
+	border-radius: 4px;
+	color: #a4a3a3;
+	width: 254px;
+	height: 68px;
+	padding: 3px;
+}
+.surveyBox .surquick .surText {
+	margin: 15px 0 10px 0;
+}
+.surveyBox .surquick .surText .surqBtn {
+	color: #fff;
+	padding: 3px 15px;
+	background-color: #13c9cb;
+	margin-top: 20px;
+	display: inline-block;
+	border-radius: 4px;
+}
+
+/* 人工 */
+.surveyBox .surveyPeople {
+	width: 260px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -140px;
+	border: 1px solid #13c9cb;
+	background-color: #fff;
+	-webkit-transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	display: none;
+	box-shadow: 0px 1px 12px #C7C9CA;
+	border-radius: 2px;
+	border-top: 2px solid #13c9cb;
+}
+
+.surveyBox .surveyPeople .chackStart .chose {
+	background-position: -253px 0px;
+}
+.surveyBox .surveyPeople .chackStart {
+	margin-bottom: 10px;
+}
+
+.surveyBox .surThanks, .surveyBox  .isClose, .allBlackBox .addCallBox, .allBlackBox .callMsgBox {
+	border: 1px solid #13c9cb;
+	width: 280px;
+	height: 62px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -31px 0 0 -140px;
+	display: none;
+	-webkit-transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	box-shadow: 0px 1px 12px #C7C9CA;
+	border-top: 2px solid #13c9cb;
+	border-radius: 2px;
+}
+.surveyBox .surThanks p {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 15px;
+}
+.surveyBox  .isClose p {
+	text-align: center;
+	font-size: 18px;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.surveyBox  .isClose .iscloseDiv a {
+	display: inline-block;
+	width: 88px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
+	color: #5f5e5e;
+	font-size: 14px;
+	margin-right: 20px;
+}
+.surveyBox  .isClose {
+	height: 140px;
+	margin-top: -90px;
+	text-align: center;
+}
+.surveyBox  .isClose .iscloseDiv .surEndBtn {
+	margin-left: 20px;
+	background-color: #13c9cb;
+	border: none 0px;
+	color: #fff;
+}
+
+/* 语音通话 */
+.allBlackBox .addCallBox {
+	height: 100px;
+}
+.allBlackBox .addCallBox p {
+	height: 30px;
+	margin-bottom: 10px;
+	color: #b1b6b4;
+	line-height: 30px;
+	text-align: center;
+}
+.allBlackBox .addCallBox .addCall a {
+	*display: inline;
+	zoom: 1;
+}
+.allBlackBox .addCallBox .addCall input {
+	text-indent: 6px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	line-height: 26px;
+	width: 130px;
+	height: 26px;
+	margin-left: 15px;
+}
+.allBlackBox .addCallBox .addCall .sendCallBtn {
+	border-radius: 5px;
+	background-color: #09aeb0;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 15px;
+	margin-right: 5px;
+}
+.allBlackBox .addCallBox .addCall .addCallClose {
+	border-radius: 5px;
+	background-color: #999;
+	color: #fff;
+	padding: 5px 10px;
+}
+.allBlackBox .addCallBox .addCallMsg {
+	display: none;
+	text-align: left;
+	padding-left: 20px;
+	color: #B94545;
+}
+.allBlackBox .callMsgBox {
+	height: 40px;
+}
+.allBlackBox .callMsgBox p {
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	margin-top: 5px;
+}
+
+/* 语音通话相关模式Class */
+.defaultMode {
+	display: block;
+}
+.defaultMode .addCallBox {
+	display: block;
+}
+.defaultMode .addCallBox .addCallMsg {
+	display: none;
+}
+.defaultMode .callMsgBox {
+	display: none;
+}
+
+.failMode {
+	display: block;
+}
+.failMode .addCallBox {
+	display: block;
+}
+.failMode .addCallBox .addCallMsg {
+	display: block;
+}
+.failMode .callMsgBox {
+	display: none;
+}
+
+.successMode {
+	display: block;
+}
+.successMode .addCallBox {
+	display: none;
+}
+.successMode .addCallBox .addCallMsg {
+	display: none;
+	z-index: -1;
+}
+.successMode .callMsgBox {
+	display: block;
+}
+
+/* 评价操作相关的显示隐藏Class */
+/* 普通结束模式 */
+.commonMode {
+	display: block;
+}
+.commonMode .surveyRobot {
+	display: none;
+}
+.commonMode .surveyPeople {
+	display: none;
+}
+.commonMode .surThanks {
+	display: none;
+}
+.commonMode .isClose {
+	display: block;
+}
+
+/* 机器人模式 */
+.robotMode {
+	display: block;
+}
+.robotMode .surveyRobot {
+	display: block;
+}
+.robotMode .surveyPeople {
+	display: none;
+}
+.robotMode .surThanks {
+	display: none;
+}
+.robotMode .isClose {
+	display: none;
+}
+
+.robotMsgMode {
+	display: block;
+}
+.robotMsgMode .surveyRobot {
+	display: block;
+}
+.robotMsgMode .surquick {
+	display: block;
+}
+.robotMsgMode .surveyPeople {
+	display: none;
+}
+.robotMsgMode .surThanks {
+	display: none;
+}
+.robotMsgMode .isClose {
+	display: none;
+}
+
+/* 人工模式 */
+.manualMode {
+	display: block;
+}
+.manualMode .surveyRobot {
+	display: none;
+}
+.manualMode .surveyPeople {
+	display: block;
+}
+.manualMode .surThanks {
+	display: none;
+}
+.manualMode .isClose {
+	display: none;
+}
+
+.manualMsgMode {
+	display: block;
+}
+.manualMsgMode .surveyRobot {
+	display: none;
+}
+.manualMsgMode .surquick {
+	display: block;
+}
+.manualMsgMode .surveyPeople {
+	display: block;
+}
+.manualMsgMode .surThanks {
+	display: none;
+}
+.manualMsgMode .isClose {
+	display: none;
+}
+
+/* 单独打开页面 */
+.singlePage {
+	min-width: 500px;
+	min-height: 600px;
+}
+.singlePage .mainBox {
+	width: 500px;
+	height: 505px;
+	min-height:480px;
+	min-width:320px;
+	max-width: 500px;
+	max-height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 57%;
+	margin-left: -250px;
+	margin-top: -300px;
+	background-color: #f7fafa;
+	box-shadow: 0 0 20px 2px #afb6b8;
+	border:1px solid #ccc\9;
+	*border:1px solid #ccc;
+
+}
+
+.singlePage .chatPanelList {
+	max-width: 500px;
+}
+
+/* effect */
+/*@-webkit-keyframes animations-shake {
+ 0%, 100% {-webkit-transform: translateY(0);}
+ 10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-20px);}
+ 20%, 40%, 60%, 80% {-webkit-transform: translateY(20px);}
+ }*/
+@-webkit-keyframes animations-shake {
+0%,
+100% {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+10%,
+30%,
+50%,
+70%,
+90% {
+-webkit-transform: translateY(-20px);
+transform: translateY(-20px);
+}
+20%,
+40%,
+60%,
+80% {
+-webkit-transform: translateY(20px);
+transform: translateY(20px);
+}
+}
+@keyframes animations-shake {
+0%,
+100% {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+10%,
+30%,
+50%,
+70%,
+90% {
+-webkit-transform: translateY(-20px);
+transform: translateY(-20px);
+}
+20%,
+40%,
+60%,
+80% {
+-webkit-transform: translateY(20px);
+transform: translateY(20px);
+}
+}
+.effect-shake {
+	/*-webkit-animation: animations-shake 2s ease-out;
+	 -moz-animation: animations-shake 2s ease-out;
+	 -o-animation: animations-shake 2s ease-out;
+	 -ms-animation: animations-shake 2s ease-out;*/
+	-webkit-animation: animations-shake 2s ease-out;
+	animation: animations-shake 2s ease-out;
+}
+/* 摇摆 */
+@-webkit-keyframes animations-rolling {
+0% {
+-webkit-transform: rotate(0deg);
+}
+30% {
+-webkit-transform: rotate(30deg);
+}
+70% {
+-webkit-transform: rotate(-30deg);
+}
+100% {
+-webkit-transform: rotate(0deg);
+}
+}
+.effect-rolling {
+	-webkit-transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	transform-origin: center bottom;
+	-webkit-animation: animations-rolling 2s ease-out;
+	animation: animations-rolling 2s ease-out;
+}
+/* 翻转 */
+@-webkit-keyframes animations-flip {
+0% {
+-webkit-transform: rotateY(0deg);
+}
+50% {
+-webkit-transform: rotateY(180deg);
+}
+100% {
+-webkit-transform: rotateY(0deg);
+}
+}
+.effect-flip {
+	-webkit-animation: animations-flip 2s ease-out;
+	animation: animations-flip 2s ease-out;
+}
+/* 放大 */
+@-webkit-keyframes animations-zoomIn {
+0% {
+-webkit-transform: scale(1);
+}
+50% {
+-webkit-transform: scale(1.2);
+}
+100% {
+-webkit-transform: scale(1);
+}
+}
+.effect-zoomIn {
+	-webkit-animation: animations-zoomIn 2s ease-out;
+	animation: animations-zoomIn 2s ease-out;
+}
+/* 缩小 */
+@-webkit-keyframes animations-zoomOut {
+0% {
+-webkit-transform: scale(1);
+}
+50% {
+-webkit-transform: scale(0.8);
+}
+100% {
+-webkit-transform: scale(1);
+}
+}
+.effect-zoomOut {
+	-webkit-animation: animations-zoomOut 2s ease-out;
+	animation: animations-zoomOut 2s ease-out;
+}
+/* 开门 */
+@-webkit-keyframes animations-openDoor {
+0% {
+-webkit-transform: rotateY(0deg);
+}
+50% {
+-webkit-transform: rotateY(-180deg);
+}
+100% {
+-webkit-transform: rotateY(0deg);
+}
+}
+.effect-openDoor {
+	-webkit-transform-origin: right;
+	-webkit-animation: animations-flip 2s ease-out;
+	animation: animations-flip 2s ease-out;
+}
+
+/* 弹窗 */
+.zcDialog {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1050;
+	text-align: center;
+}
+.zcDialog .zcDialog-header {
+	font-size: 20px;
+	padding: 10px 0;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #09aeb0;
+}
+.zcDialog .zcDialog-header .header-left {
+	float: left;
+	color: #FFFFFF;
+}
+.zcDialog .zcDialog-header .header-right {
+	float: right;
+	margin-right:15px;
+}
+
+.zcDialog-leaveMessage .zcDialog-body {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 80%;
+}
+
+.zcDialog .zcDialog-body {
+	font-size: 16px;
+	padding: 20px 0;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.zcDialog .zcDialog-body .errorMsg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: salmon;
+	color: #FFFFFF;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	display: none;
+}
+.zcDialog .zcDialog-body .errorMsg .errorMsgText {
+	float: left;
+}
+.zcDialog .zcDialog-body .errorMsg .errorMsgBtn {
+	float: right;
+	line-height: 0;
+}
+
+.zcDialog .zcDialog-body .errorMsg .errorMsgBtn .zhichiClose {
+	background-position: -30px -29px;
+}
+.zcDialog .zcDialog-footer {
+	font-size: 18px;
+	border-top: 1px solid #d9d9d9;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	/*position: absolute;*/
+	bottom: 0px;
+	left: 0px;
+}
+.zcDialog .zcDialog-footer:hover {
+	background-color: #f0f0f0;
+}
+.zcDialog .zcDialog-footer .zcDialog-btn {
+	width: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 0;
+	margin: 5px 0;
+}
+.zcDialog .zcDialog-footer .zcDialog-btn:link {
+	color: #c3c3c3;
+}
+.zcDialog .zcDialog-footer .zcDialog-btn:hover {
+	background-color: #f0f0f0;
+}
+.zcDialog .zcDialog-footer .zcDialog-btn:nth-child(2) {
+	border-left: 1px solid #d9d9d9;
+}
+/* 遮罩 */
+.zcBackdrop {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1040;
+	background-color: rgba(0, 0, 0, .6);
+	filter:alpha(opacity=50)!important;
+	background:#000\9;
+
+}
+/* modal */
+.zcDialog .zcDialog-modal {
+	/*position: relative;
+	 margin: 80px auto 0;*/
+	width: 90%;
+	background-color: #FFFFFF;
+	border-radius: 2px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	*margin-top:160px;
+}
+.zcDialog .zcDialog-vertical {
+	height: 100%;
+	width: 1px;
+	background-color: transparent;
+	color: transparent;
+	border: none;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* alert */
+.zcDialog .zcDialog-alert {
+	position: relative;
+	margin: 0 auto;
+}
+
+/* 全屏弹窗 */
+.zcDialog-full {
+
+}
+.zcDialog-full .zcDialog-modal {
+	width: 100%;
+	height: 100%;
+	*height:480px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.zcDialog-full .zcDialog-modal .zcDialog-header {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.zcDialog-full .zcDialog-modal .zcDialog-header .header-right .zhichiClose {
+	background-position: -30px -29px;
+}
+.zcDialog-full .zcDialog-modal .zcDialog-header .header-right .zhichiMin {
+	background-position: -70px -30px;
+}
+.zcDialog-full .zcDialog-modal .zcDialog-header .header-right .zhichiFold {
+	background-position: -450px 0;
+}
+
+/* 技能组弹窗 */
+.zcDialog-groupList {
+
+}
+.zcDialog-groupList .zcDialog-header {
+	background-color: transparent;
+}
+.zcDialog-groupList .zcDialog-body {
+
+}
+.zcDialog-groupList .zcDialog-body .groupList {
+	width: 100%;
+	display: inline-block;
+	height: 275px;
+	max-height: 274px;
+	overflow-y: scroll;
+	margin-right: -30px;
+	padding-right: 10px;
+	text-align: left;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn {
+	width: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	margin: 5px 0;
+	text-align: center;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn:link {
+	color: #FFFFFF;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn:visited {
+	color: #FFFFFF;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn:hover {
+	color: #FFFFFF;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn:active {
+	color: #FFFFFF;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn span {
+	width: 80%;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f0f0f0;
+	/*border: 2px solid transparent;*/
+	padding: 10px 0;
+	overflow: hidden;
+}
+.zcDialog-groupList .zcDialog-body .groupList-btn span:active {
+	box-shadow: 0 0 2px 2px #afb6b8;
+}
+
+.zcDialog-groupList .zcDialog-footer {
+
+}
+
+/* 留言弹窗 */
+.zcDialog-leaveMessage {
+
+}
+
+.zcDialog-leaveMessage .zcDialog-footer {
+	position: absolute;
+}
+
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox {
+	width: 100%;
+	display: inline-block;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-title {
+	width: 100%;
+	*width:90%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	*padding:0px 20px;
+	font-size: 14px;
+	color: #b1b6b4;
+	text-align: left;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-title > p {
+	font-size: 14px;
+	/*max-height: 140px;*/
+	overflow: hidden;
+	word-wrap: break-word;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-form {
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: left;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-form .linebox {
+	width: 100%;
+	*width:84%;
+	/*display: inline-block;*/
+	box-sizing: border-box;
+	border: 1px solid #d9d9d9;
+	border-radius: 2px;
+	margin: 8px 0;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-form .linebox.text-wrap{
+	height: 145px !important;
+}
+
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-form input {
+	display: inline-block;
+	box-sizing: border-box;
+	border: none;
+	padding: 0 20px;
+	margin: 10px 0;
+	width: 100%;
+	*width:84%;
+	height: 20px;
+	line-height: 20px;
+	outline: none;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-form textarea {
+	display: inline-block;
+	box-sizing: border-box;
+	border: none;
+	padding: 10px 20px;
+	width: 100%;
+	*width:85%;
+	height: 140px;
+	resize: none;
+	outline: none;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .leaveMessage-form textarea p{
+	word-wrap:break-word;
+}
+.zcDialog-leaveMessage .zcDialog-body .leaveMessageBox .errorMsg {
+	display: none;
+	color: #ff0000;
+	font-size: 16px;
+}
+/* 留言成功 */
+.zcDialog-leaveMessageSuccess {
+
+}
+.zcDialog-leaveMessageSuccess .zcDialog-body .leaveMessageSuccessBox {
+	width: 100%;
+	display: inline-block;
+}
+.zcDialog-leaveMessageSuccess .zcDialog-body .leaveMessageSuccessBox .leaveMessageSuccessBox-title {
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: center;
+	font-size: 24px;
+}
+.icon-img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.icon-text {
+	display: inline-block;
+	vertical-align: middle;
+}
+.zcDialog-leaveMessageSuccess .zcDialog-body .leaveMessageSuccessBox .leaveMessageSuccessBox-info {
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.zcDialog-leaveMessageSuccess .zcDialog-body .leaveMessageSuccessBox .leaveMessageSuccessBox-btn {
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.zcDialog-leaveMessageSuccess .zcDialog-body .leaveMessageSuccessBox .leaveMessageSuccessBox-btn .recreateLeaveMessage {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* 评价 */
+.zcDialog-survey {
+
+}
+
+.zcDialog-survey .zcDialog-header {
+	font-size: 12px;
+	padding: 10px;
+}
+.zcDialog-survey .zcDialog-header .surTip {
+	/*color: #a4a3a3;*/
+	color: #FFFFFF;
+	margin-right: 8px;
+}
+
+.zcDialog-survey .zcDialog-header a {
+	/*color: #13c9cb;*/
+	color: #FFFFFF;
+	display: inline-block;
+	margin: 0 5px;
+}
+.zcDialog-survey .zcDialog-header .surmidQus {
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.surmid .chackyes {
+	display: inline-block;
+}
+.surmid .chackyes a {
+	width: 66px;
+	height: 66px;
+	display: inline-block;
+	border-radius: 3px;
+	color: #a4a3a3;
+	margin: 0 10px;
+}
+.surmid .chackyes .checked .spanYes {
+	background-position: -183px -2px;
+}
+.surmid .chackyes .checked .spanNo {
+	background-position: -120px -2px;
+}
+.surmid .chackyes a .spanYes {
+	background-position: -149px -2px;
+}
+.surmid .chackyes a .spanNo {
+	background-position: -96px -2px;
+}
+.surmid .chackyes a:hover {
+	background-color: #eef2f2;
+}
+.surmid .chackyes .active {
+	background-color: #eef2f2;
+}
+
+.surmid .chackStart .chose {
+	background-position: -253px 0px;
+}
+.surmid .chackStart {
+	margin-bottom: 10px;
+}
+
+.surquick {
+	text-align: center;
+	display: none;
+	-webkit-transition: all .5s cubic-bezier(0.86,0,0.07,1);
+	transition: all .5s cubic-bezier(0.86,0,0.07,1);
+}
+.surquick .surqList {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 20px;
+	box-sizing: border-box;
+}
+.surquick .surqList span {
+	width: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: 5px 0;
+}
+.surquick .surqList span i {
+	width: 95%;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f0f0f0;
+	padding: 5px 0;
+	font-style: normal;
+	cursor: pointer;
+	/*border: 2px solid transparent;*/
+}
+.surquick .surqList span i:active {
+	box-shadow: 0 0 2px 2px #afb6b8;
+}
+
+.surquick .surquickp1 {
+	line-height: 30px;
+	margin-top: 15px;
+}
+.surquick .surText {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 20px;
+	box-sizing: border-box;
+}
+.surquick .surText .surTextInput {
+	resize: none;
+	border: 1px solid #e6e6e6;
+	border-radius: 4px;
+	color: #a4a3a3;
+	/*width: 254px;*/
+	width: 98%;
+	height: 68px;
+	padding: 3px;
+	box-sizing: border-box;
+}
+
+.surquick .surText .surqBtn {
+	color: #fff;
+	padding: 3px 15px;
+	background-color: #13c9cb;
+	margin-top: 20px;
+	display: inline-block;
+	border-radius: 4px;
+}
+
+.surveyPeople {
+
+}
+.surThanks {
+
+}
+
+/* 结束弹窗 */
+.zcDialog-close .zcDialog-body p {
+	text-align: center;
+	font-size: 18px;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.zcDialog-close .zcDialog-body .iscloseDiv a {
+	display: inline-block;
+	width: 88px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
+	color: #5f5e5e;
+	font-size: 14px;
+	margin-right: 20px;
+}
+.zcDialog-close .zcDialog-body .iscloseDiv .surEndBtn {
+	margin-left: 20px;
+	border: none 0px;
+	color: #fff;
+}
+
+/* 评价文本框 */
+.surTextInput::-webkit-input-placeholder::before {
+	content: "欢迎给我们的服务提建议";
+	display: block;
+	color: #999;
+}
+.surTextInput::-moz-placeholder::before {
+	content: "欢迎给我们的服务提建议";
+	display: block;
+	color: #999;
+}
+.surTextInput:-moz-placeholder::before {
+	content: "欢迎给我们的服务提建议";
+	display: block;
+	color: #999;
+}
+.surTextInput:-ms-input-placeholder::before {
+	content: "欢迎给我们的服务提建议";
+	display: block;
+	color: #999;
+}
+
+/* 语音通话弹窗 */
+.zcDialog-voiceCalls .zcDialog-body p {
+	text-align: center;
+	font-size: 18px;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.zcDialog-voiceCalls .zcDialog-body .addCall input {
+	max-width: 300px;
+	/*min-width: 150px;*/
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+}
+.zcDialog-voiceCalls .zcDialog-body .addCall a {
+	display: inline-block;
+	width: 88px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
+	color: #5f5e5e;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+/* 未读消息bar */
+.chatPanelList .unreadBar {
+	text-align: center;
+	font-size: 12px;
+	margin: 10px 0;
+	/*color: #b1b6b4;*/
+}
+.chatPanelList .unreadBar span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.chatPanelList .unreadBar .line {
+	border-top: 1px solid #b1b6b4;
+	width: 80px;
+	margin: 0 10px;
+}
+
+/* msgDiv */
+.magBox {
+	margin: 10px 0;
+	position: relative;
+}
+.magBox .leftName {
+	font-size: 14px;
+	color: #858282;
+	margin-bottom: 10px;
+}
+.magBox .msgDiv {
+	padding: 5px 10px 1px 10px;
+	background-color: #f0f0f0;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+	max-width: 80%;
+	min-height: 20px;
+	border-radius: 5px;
+}
+.magBox .msgDiv p {
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+}
+.magBox .msgDiv .msgText {
+	width: 100%;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+	word-wrap: break-word;
+	display: inline-block;
+	overflow:hidden;
+}
+.magBox .msgDiv .msgText pre{
+	white-space:normal;
+}
+.magBox .msgDiv .msgText p {
+	padding: 0;
+}
+.magBox .msgDiv .msgText a {
+	/*color: #f0f0f0;*/
+}
+.magBox .msgDiv .stionsList {
+	padding: 0;
+	margin-top: 10px;
+	list-style: none;
+}
+.magBox .msgDiv .stionsList li {
+	padding: 0 10px;
+}
+.magBox .msgDiv .stionsList li a {
+	color: #4db2f7;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+.magBox .msgDiv .stripe {
+	color: #8b898f;
+	font-size: 14px;
+}
+.rightMsg {
+	text-align: right;
+}
+.rightMsg .msgDiv {
+	background-color: #09aeb0;
+	color: #f0f0f0;
+	position: relative;
+	text-align: left;
+}
+.rightMsg .msgDiv:before {
+	width: 0px;
+	position: absolute;
+	top: 12px;
+	right: -12px;
+	border-style: solid;
+	border-color: transparent #09aeb0;
+	border-width: 0 0 12px 12px;
+	content: "";
+}
+.rightMsg .msgDiv a:link {
+	color: #fea;
+}
+.rightMsg .msgDiv a:visited {
+	color: #fea;
+}
+.rightMsg .msgDiv a:hover {
+	color: #fea;
+}
+.rightMsg .msgDiv a:active {
+	color: #fea;
+}
+
+.leftMsg .msgDiv:before {
+	width: 0px;
+	position: absolute;
+	top: 12px;
+	left: -12px;
+	border-style: solid;
+	border-color: transparent #f0f0f0;
+	border-width: 0 12px 12px 0;
+	content: "";
+}
+.leftMsg .msgDiv p {
+	word-wrap: break-word;
+}
+
+/*输入框提示语 换行兼容*/
+.txt-tip {
+	width: 90%;
+	color: #B1B5B5;
+	font-size: 12px;
+	display: block;
+	position: relative;
+	top: -130px;
+	left: 20px;
+	word-wrap: break-word;
+}
+
+.txt-tip ol {
+	padding-left: 18px;
+	font-size: 13px;
+	margin-top: 0px;
+	list-style-type: decimal;
+}
+
+.txt-tip-title {
+	width: 90%;
+	color: #B1B5B5;
+	font-size: 12px;
+	display: block;
+	position: relative;
+	top: -28px;
+	left: 20px;
+	/*line-height: 4px;*/
+}
+
+.linebox-leaveMessage-email {
+	height: 44px;
+}
+.linebox-leaveMessage-tel{
+	height: 44px;
+}
+.modalFrame {
+	width: 200px;
+	height:0px;
+	right:0px;
+	position:absolute;
+	background:white;
+	z-index:104;
+	z-index:104;
+	border:1px solid black;
+}
+.shadow-layer{
+	width:100%;
+	height:490px;
+	background:#ccc;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:102;
+}
+/*.mainBox .chatPanel-scroll{
+	max-width: 500px;
+}*/

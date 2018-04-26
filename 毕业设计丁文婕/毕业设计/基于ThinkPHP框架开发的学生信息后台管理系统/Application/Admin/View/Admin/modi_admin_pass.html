@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+</head>
+<body>
+<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/AdminUserInfo')}">修改信息</a></li>
+			<li class="active"><a href="/Admin/index/modiAdminPass" target="_self">修改密码</a></li>
+		</ul>
+		<form id="modi_admin_pass" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label" for="input-old-password">原始密码</label>
+					<div class="controls">
+						<input type="password" class="input-xlarge" id="input-old-password" name="old_password">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-password">新密码</label>
+					<div class="controls">
+						<input type="password" class="input-xlarge" id="input-password" name="password">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-repassword">重复新密码</label>
+					<div class="controls">
+						<input type="password" class="input-xlarge" id="input-repassword" name="repassword">
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="button" onclick="modiAdminPass()" class="btn btn-primary  js-ajax-submit">保存</button>
+				</div>
+			</fieldset>
+		</form>
+</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/ajaxpost_admin.js"></script>
+</body>
+</html>

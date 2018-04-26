@@ -1,0 +1,56 @@
+        <div class="table-actions">
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/check/check/1" data-subcheck="true">审核</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/check/uncheck/1" data-subcheck="true">取消审核</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/top/top/1" data-subcheck="true">置顶</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/top/untop/1" data-subcheck="true">取消置顶</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/recommend/recommend/1" data-subcheck="true">推荐</button>
+			<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/recommend/unrecommend/1" data-subcheck="true">取消推荐</button>
+			<button class="btn btn-primary btn-small js-articles-copy" type="button">批量复制</button>
+			<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="/index.php/AdminPost/delete" data-subcheck="true" data-msg="您确定删除吗？">删除</button>
+		</div>
+		
+        <input id="current_url" type="hidden" name="current_url" value="{$current_url}" />
+
+		<table class="table table-hover table-bordered table-list">
+			<thead>
+				<tr>
+					<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+					<th width="50">ID</th>
+					<th width="150">专业</th>
+					<th width="50">分数</th>
+					<th width="50">年份</th>
+					<th width="50">计划数</th>
+					<th width="70">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			  <for start="0" end="count($college_list)">
+			  	<tr>
+				   <td>
+					<input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$college_list[$i]['id']}" title="ID:{$college_list[$i]['id']}"></td>
+					<td><b>{$college_list[$i]['id']}</b></td>
+					<td>{$college_list[$i]['major']}</td>
+					<td>{$college_list[$i]['code']}</td>
+					<td>{$college_list[$i]['year']}</td>
+					<td>{$college_list[$i]['planum']}</td>
+
+					<td>
+					<a href="{:U('/Admin/index/collegeGradeEdit',array('id'=>$college_list[$i]['id']))}">编辑</a> | 
+					<a href="javascript:;" onclick='del_college({$college_list[$i]["id"]},$(this),"{:U('/Admin/College/ajaxDelGrade')}")' class="js-ajax-delete">删除</a>
+					
+					</td>
+				 </tr>
+			  </for>
+				
+
+			</tbody>
+            
+			
+			
+		</table>
+			<div id="page" class="wp-paginate">
+             	{$page}
+            </div>
+
+            
+            

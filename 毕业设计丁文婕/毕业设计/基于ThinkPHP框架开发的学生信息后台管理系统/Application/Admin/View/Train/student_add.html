@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+
+
+<style type="text/css">
+.one_img_uplode{
+border: 1px solid #696;padding: 60px 0;text-align: center; width: 200px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: #666 0px 0px 10px;
+-moz-box-shadow: #666 0px 0px 10px;
+}
+
+</style>
+<!-- 时间控件 -->
+<link rel="stylesheet" href="__PUBLIC__/common/css/calendar.css">
+<style type="text/css">
+.calendar ul, .calendar ol, .calendar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<!-- 时间控件 -->
+</head>
+
+
+<body>
+<include file="Assis:add_article_ball"/>
+
+
+
+
+
+<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('/Admin/index/trainStudentManage')}">学生管理</a></li>
+        	<li class="active"><a href="{:U('/Admin/index/trainStudentAdd')}" >添加学生</a></li>
+		</ul>
+		<form name="form_data" action="{:U('/Admin/Train/ajaxAddStudent')}" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<div class="row-fluid">
+				<div class="span9">
+					<table class="table table-bordered">
+						<tbody>
+						<tr>
+							<th>姓名</th>
+							<td>
+								<input type="text" style="width:400px;" name="post[name]" id="title" required="" value="" placeholder="请输入姓名" aria-required="true">
+								<span class="form-required">*</span>
+							</td>
+						</tr>
+						<tr>
+							<th>性别</th>
+							<td>
+							<select name="post[sex]">
+								<option value="男">男</option>
+								<option value="女">女</option>
+							</select>
+							
+							</td>
+						</tr>
+						<tr>
+							<th>手机号</th>
+							<td><input type="text" name="post[phone]" style="width: 400px" placeholder="请输入手机号"></td>
+						</tr>
+						<tr>
+							<th>生日</th>
+							<td>
+							   <input type="text" id="start_time" name="post[birth]" value="<?php echo date('Y-m-d H:i:s');?>" class="js-datetime date">
+                            	 <include file="Assis:start_times"/>
+                             </td>
+						</tr>
+						<tr>
+							<th>来源</th>
+							<td>
+								<input type="text" name="post[source]" value="" style="width: 400px" placeholder="请输入来源">
+							</td>
+						</tr>
+						<tr>
+							<th>地址</th>
+							<td>
+								<input type="text" name="post[site]" value="" style="width: 400px" placeholder="请输入来源">
+							</td>
+						</tr>
+						<tr>
+							<th>备注信息</th>
+							<td>
+								<textarea name="post[ramark]" style="height:50px;"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>费用</th>
+							<td>
+								<input type="text" name="post[money]" id="author" value="" style="width: 400px" placeholder="请输入学员费用">
+							</td>
+						</tr>
+
+						<tr>
+							<th>上课班级</th>
+							<td>
+								<select name="post[b_id]">
+									<for start="0" end="count($begins)">
+										<option value="{$begins[$i]['id']}">{$begins[$i]['name']}</option>
+									</for>
+								</select>
+							</td>
+						</tr>
+					    </tbody>
+				    </table>
+				</div>
+
+				<div class="span3">
+					<table class="table table-bordered">
+						<tbody>
+						  <tr>
+							<th><b>照片</b></th>
+						  </tr>
+						  <tr>
+							<td>
+							  <div style="text-align: center;">
+							    <input type="hidden" name="post[img]" id="thumb" value="/Public/common/default_img/default-thumbnail.png">
+							    
+							    
+							      <img onclick="upload_open('.aui_state_lock')" src="__PUBLIC__/common/default_img/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: pointer;">
+							  
+							    <input type="button" class="btn btn-small" onclick="call_img($(this))" value="取消图片">
+							  </div>
+							</td>
+						  </tr>
+					   </tbody>
+				    </table>
+				</div>
+			</div>
+
+			<div class="form-actions">
+				<a class="btn btn-primary js-ajax-submit" href="javascript:submit_ajax_form()">提交</a>
+				<a class="btn" href="javascript:;">返回</a>
+				<!-- <button class="btn btn-primary js-ajax-submit" type="submit">提交1</button> -->
+			</div>
+		</form>
+</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_common.js"></script>
+<!-- 时间控件 -->
+<script src="__PUBLIC__/common/js/calendar.js"></script>
+		<script>
+		    $('#ca').calendar({
+		        width: 320,
+		        height: 320,
+		        data: [
+					{
+					  date: '2015/12/24',
+					  value: 'Christmas Eve'
+					},
+					{
+					  date: '2015/12/25',
+					  value: 'Merry Christmas'
+					},
+					{
+					  date: '2016/01/01',
+					  value: 'Happy New Year'
+					}
+				],
+		    });
+            $('#start_times').calendar({
+		        trigger: '#start_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });   
+		</script>
+<!-- 时间控件 -->
+</body>
+</html>

@@ -1,0 +1,1565 @@
+[ 2018-03-07T11:32:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8] Undefined index: AdminUserInfo D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\AdminUserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+
+[ 2018-03-07T11:32:40+08:00 ] 127.0.0.1 /Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2018-03-07T11:32:40+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-03-07T11:50:59+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.8122534666734069
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-03-07T11:51:08+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2018-03-07T11:51:09+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.8373294744258877
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-03-07T11:51:18+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `user` = 'admin' AND `pwd` = '3e7ef2d52d4916ea428fd42daebd4a16' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0032s ]
+SQL: UPDATE `yxblog_admin_user_record` SET `session`='s33kpradn5iill63h1lb54vs91' WHERE `uid` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-03-07T11:51:19+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0090s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-03-07T11:51:20+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0090s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined index: HTTP_ACCERT D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001797s ]
+
+[ 2018-03-07T11:53:38+08:00 ] 127.0.0.1 /Admin/index/sites
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0032s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `yxblog_sites` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-03-07T11:54:33+08:00 ] 127.0.0.1 /Admin/index/sites
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0163s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `yxblog_sites` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-03-07T11:55:41+08:00 ] 127.0.0.1 /Admin/sites/ajaxUpdataSites.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0038s ]
+SQL: UPDATE `yxblog_sites` SET `site_name`='资源邦-免费精品源码资源',`site_icp`='京ICP备17008606号-1',`site_admin_email`='ysxkVIP@163.com',`site_admin_qq`='18259526',`site_admin_sina_weibo`='http://weibo.com/yesexingkong',`site_links`='ThinkCMF,http://www.thinkcmf.com,Co,https://www.devmsg.com,爱CMF主题网,http://www.cagelee.com',`site_statistics`='&lt;!--百度验证代码--&gt;
+&lt;meta name=&quot;baidu-site-verification&quot; content=&quot;YpTMrQ4rcn&quot; /&gt;
+&lt;!--百度验证代码--&gt;
+&lt;!--百度统计代码--&gt;
+&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?d69808f83b66ddc58bc8e5dab24263da&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+&lt;!--百度统计代码--&gt;
+&lt;!--百度自动推送代码--&gt;
+&lt;script&gt;
+(function(){
+    var bp = document.createElement(\'script\');
+    var curProtocol = window.location.protocol.split(\':\')[0];
+    if (curProtocol === \'https\') {
+        bp.src = \'https://zz.bdstatic.com/linksubmit/push.js\';        
+    }
+    else {
+        bp.src = \'http://push.zhanzhang.baidu.com/push.js\';
+    }
+    var s = document.getElementsByTagName(&quot;script&quot;)[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+&lt;/script&gt;
+&lt;!--百度自动推送代码--&gt;',`site_copyright`='Copyright © 2015 97yun.net All Rights Reserved BY 97云',`site_seo_title`='97云博客-为了更快的开发',`site_seo_keywords`='ThinkPHP,PHP,JAVASCRIPT,laravel,ysxk,软件,网站,夜色星空,夜星,夜星工作室,97云,97云分享,97云资源,97yun,97',`site_seo_description`='97yun\'s Blog:记录生活点滴,学习,分享,资源' WHERE ( id = 1 ) [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-03-07T11:55:52+08:00 ] 127.0.0.1 /Admin/sites/ajaxUpdataSites.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0043s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0045s ]
+SQL: UPDATE `yxblog_sites` SET `site_name`='资源邦-免费精品源码资源',`site_icp`='京ICP备17008606号-1',`site_admin_email`='ysxkVIP@163.com',`site_admin_qq`='18259526',`site_admin_sina_weibo`='http://weibo.com/yesexingkong',`site_links`='资源邦-免费精品源码资源www.wazyb.com',`site_statistics`='&lt;!--百度验证代码--&gt;
+&lt;meta name=&quot;baidu-site-verification&quot; content=&quot;YpTMrQ4rcn&quot; /&gt;
+&lt;!--百度验证代码--&gt;
+&lt;!--百度统计代码--&gt;
+&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?d69808f83b66ddc58bc8e5dab24263da&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+&lt;!--百度统计代码--&gt;
+&lt;!--百度自动推送代码--&gt;
+&lt;script&gt;
+(function(){
+    var bp = document.createElement(\'script\');
+    var curProtocol = window.location.protocol.split(\':\')[0];
+    if (curProtocol === \'https\') {
+        bp.src = \'https://zz.bdstatic.com/linksubmit/push.js\';        
+    }
+    else {
+        bp.src = \'http://push.zhanzhang.baidu.com/push.js\';
+    }
+    var s = document.getElementsByTagName(&quot;script&quot;)[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+&lt;/script&gt;
+&lt;!--百度自动推送代码--&gt;',`site_copyright`='Copyright © 2015 97yun.net All Rights Reserved BY 97云',`site_seo_title`='97云博客-为了更快的开发',`site_seo_keywords`='ThinkPHP,PHP,JAVASCRIPT,laravel,ysxk,软件,网站,夜色星空,夜星,夜星工作室,97云,97云分享,97云资源,97yun,97',`site_seo_description`='97yun\'s Blog:记录生活点滴,学习,分享,资源' WHERE ( id = 1 ) [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2018-03-07T11:56:11+08:00 ] 127.0.0.1 /Admin/sites/ajaxUpdataSites.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0203s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0352s ]
+SQL: UPDATE `yxblog_sites` SET `site_name`='资源邦-免费精品源码资源',`site_icp`='京ICP备17008606号-1',`site_admin_email`='ysxkVIP@163.com',`site_admin_qq`='18259526',`site_admin_sina_weibo`='http://weibo.com/yesexingkong',`site_links`='资源邦-免费精品源码资源www.wazyb.com',`site_statistics`='&lt;!--百度验证代码--&gt;
+&lt;meta name=&quot;baidu-site-verification&quot; content=&quot;YpTMrQ4rcn&quot; /&gt;
+&lt;!--百度验证代码--&gt;
+&lt;!--百度统计代码--&gt;
+&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?d69808f83b66ddc58bc8e5dab24263da&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+&lt;!--百度统计代码--&gt;
+&lt;!--百度自动推送代码--&gt;
+&lt;script&gt;
+(function(){
+    var bp = document.createElement(\'script\');
+    var curProtocol = window.location.protocol.split(\':\')[0];
+    if (curProtocol === \'https\') {
+        bp.src = \'https://zz.bdstatic.com/linksubmit/push.js\';        
+    }
+    else {
+        bp.src = \'http://push.zhanzhang.baidu.com/push.js\';
+    }
+    var s = document.getElementsByTagName(&quot;script&quot;)[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+&lt;/script&gt;
+&lt;!--百度自动推送代码--&gt;',`site_copyright`='Copyright © 2015 www.wazyb.com All Rights Reserved BY 资源邦',`site_seo_title`='97云博客-为了更快的开发',`site_seo_keywords`='ThinkPHP,PHP,JAVASCRIPT,laravel,ysxk,软件,网站,夜色星空,夜星,夜星工作室,97云,97云分享,97云资源,97yun,97',`site_seo_description`='97yun\'s Blog:记录生活点滴,学习,分享,资源' WHERE ( id = 1 ) [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2018-03-07T11:56:24+08:00 ] 127.0.0.1 /Admin/sites/ajaxUpdataSites.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0043s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0045s ]
+SQL: UPDATE `yxblog_sites` SET `site_name`='资源邦-免费精品源码资源',`site_icp`='京ICP备17008606号-1',`site_admin_email`='ysxkVIP@163.com',`site_admin_qq`='18259526',`site_admin_sina_weibo`='http://weibo.com/yesexingkong',`site_links`='资源邦-免费精品源码资源www.wazyb.com',`site_statistics`='&lt;!--百度验证代码--&gt;
+&lt;meta name=&quot;baidu-site-verification&quot; content=&quot;YpTMrQ4rcn&quot; /&gt;
+&lt;!--百度验证代码--&gt;
+&lt;!--百度统计代码--&gt;
+&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?d69808f83b66ddc58bc8e5dab24263da&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+&lt;!--百度统计代码--&gt;
+&lt;!--百度自动推送代码--&gt;
+&lt;script&gt;
+(function(){
+    var bp = document.createElement(\'script\');
+    var curProtocol = window.location.protocol.split(\':\')[0];
+    if (curProtocol === \'https\') {
+        bp.src = \'https://zz.bdstatic.com/linksubmit/push.js\';        
+    }
+    else {
+        bp.src = \'http://push.zhanzhang.baidu.com/push.js\';
+    }
+    var s = document.getElementsByTagName(&quot;script&quot;)[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+&lt;/script&gt;
+&lt;!--百度自动推送代码--&gt;',`site_copyright`='Copyright © 2015 www.wazyb.com All Rights Reserved BY 资源邦',`site_seo_title`='资源邦-免费精品源码资源',`site_seo_keywords`='ThinkPHP,PHP,JAVASCRIPT,laravel,ysxk,软件,网站,夜色星空,夜星,夜星工作室,97云,97云分享,97云资源,97yun,97',`site_seo_description`='资源邦-免费精品源码资源' WHERE ( id = 1 ) [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-03-07T11:56:28+08:00 ] 127.0.0.1 /Admin/index/AdminUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_info` [ RunTime:0.0066s ]
+SQL: SELECT `email`,`phone`,`birth` FROM `yxblog_admin_user_info` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2018-03-07T11:56:59+08:00 ] 127.0.0.1 /Admin/index/modiAdminPass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0048s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2018-03-07T11:57:11+08:00 ] 127.0.0.1 /Admin/AdminUser/modiAdminPass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0047s ]
+SQL: SELECT `id` FROM `yxblog_admin_user` WHERE ( `user`='admin' and `pwd`='3e7ef2d52d4916ea428fd42daebd4a16' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `yxblog_admin_user` SET `pwd`='d6d12a105b099549452b21b54251908f' WHERE ( `user`='admin' and `pwd`='3e7ef2d52d4916ea428fd42daebd4a16' ) [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-03-07T11:57:12+08:00 ] 127.0.0.1 /Admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-03-07T11:57:13+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-03-07T11:58:54+08:00 ] 127.0.0.1 /Admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-03-07T11:58:54+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2018-03-07T11:59:03+08:00 ] 127.0.0.1 /Admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-03-07T11:59:03+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2018-03-07T11:59:12+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.6346644145872076
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-03-07T11:59:14+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.9136252474735236
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-03-07T11:59:15+08:00 ] 127.0.0.1 /Admin/index/getVerify/0.08632924407521769
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-03-07T11:59:22+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `user` = 'admin' AND `pwd` = 'd6d12a105b099549452b21b54251908f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0040s ]
+SQL: UPDATE `yxblog_admin_user_record` SET `session`='s33kpradn5iill63h1lb54vs91' WHERE `uid` = 1 [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-03-07T11:59:24+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0070s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-03-07T11:59:25+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0048s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: HTTP_ACCERT D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-03-07T11:59:35+08:00 ] 127.0.0.1 /Admin/index/sites
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0064s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `yxblog_sites` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-03-07T12:00:01+08:00 ] 127.0.0.1 /Admin/index/indexUserManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0034s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yxblog_index_user` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexUserController.class.php 第 14 行.
+SQL: SELECT `id`,`user`,`pet_name`,`portrait`,`email`,`regi_time`,`login_time`,`login_ip`,`status` FROM `yxblog_index_user` ORDER BY regi_time DESC LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: index_user_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 132 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_index_user` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 57 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 58 行.
+NOTIC: [8] Undefined index: login_id D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2018-03-07T12:00:19+08:00 ] 127.0.0.1 /Admin/index/indexUserManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0042s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yxblog_index_user` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexUserController.class.php 第 14 行.
+SQL: SELECT `id`,`user`,`pet_name`,`portrait`,`email`,`regi_time`,`login_time`,`login_ip`,`status` FROM `yxblog_index_user` ORDER BY regi_time DESC LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: index_user_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 132 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_index_user` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 57 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 58 行.
+NOTIC: [8] Undefined index: login_id D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\13cceef73c23f778fdb1ec193db62743.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-03-07T12:00:20+08:00 ] 127.0.0.1 /Admin/index/adminUserManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0095s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0112s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\AdminUserController.class.php 第 105 行.
+SQL: SELECT `id`,`user`,`user_name` FROM `yxblog_admin_user` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: admin_user_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 351 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_admin_user` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2018-03-07T12:00:25+08:00 ] 127.0.0.1 /Admin/index/adminUserExaJuris/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`user`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0046s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-03-07T12:01:13+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0035s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-03-07T12:01:14+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0108s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: HTTP_ACCERT D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-03-07T12:01:32+08:00 ] 127.0.0.1 /Admin/index/sites
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0078s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_sites` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `yxblog_sites` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-03-07T12:01:45+08:00 ] 127.0.0.1 /Admin/index/adminUserManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0039s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\AdminUserController.class.php 第 105 行.
+SQL: SELECT `id`,`user`,`user_name` FROM `yxblog_admin_user` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: admin_user_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 351 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_admin_user` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-03-07T12:01:49+08:00 ] 127.0.0.1 /Admin/index/adminUserExaJuris/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`user`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0049s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2018-03-07T12:02:03+08:00 ] 127.0.0.1 /Admin/index/leaveWordManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0044s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yxblog_leave_word` [ RunTime:0.0077s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\LeaveWordController.class.php 第 17 行.
+SQL: SELECT l.id,`title`,`content`,`datetime`,l.status FROM yxblog_leave_word as l INNER JOIN yxblog_index_user as iu on iu.id=l.u_id  ORDER BY datetime DESC LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yxblog_leave_word` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: leave_word_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_leave_word` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-03-07T12:02:06+08:00 ] 127.0.0.1 /Admin/index/articleManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0037s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\ArticleController.class.php 第 57 行.
+SQL: SELECT a.id,`title`,`author`,`hits`,`keywords`,`datetime`,`menu_name`,`status`,`istop`,`recommended` FROM yxblog_article as a INNER JOIN yxblog_index_menu as im on im.id=a.m_id  ORDER BY datetime DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_article` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: article_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 57 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yxblog_index_menu` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 0  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 2  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 3  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 4  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 5  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 9  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 18  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2018-03-07T12:02:08+08:00 ] 127.0.0.1 /Admin/Index/questManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0075s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yxblog_quest` [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\QuestController.class.php 第 18 行.
+SQL: SELECT `id`,`send_name`,`send_content`,`send_datetime`,`put_content`,`status`,`n_id` FROM `yxblog_quest` ORDER BY send_datetime DESC LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: quest_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 303 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_quest` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2018-03-07T12:02:14+08:00 ] 127.0.0.1 /Admin/index/indexMenuManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0034s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yxblog_index_menu` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 0  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 3  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 4  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 5  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 9  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 18  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: cid D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\9a69666de5d64509d574422618f6d290.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-03-07T12:02:22+08:00 ] 127.0.0.1 /Admin/Index/schoolManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0029s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_school` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\CollegeController.class.php 第 27 行.
+SQL: SELECT s.id,s.name,s.url,a.name as area FROM yxblog_college_school as s INNER JOIN yxblog_college_area as a on a.id=s.aid  ORDER BY s.id DESC LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_school` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: school_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 468 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_college_school` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_area` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `yxblog_college_area`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\4e97cd0a27de6bf3b88df62786a5a09c.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2018-03-07T12:02:41+08:00 ] 127.0.0.1 /Admin/index/collegeSchoolEdit/id/34005.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0032s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_school` [ RunTime:0.0052s ]
+SQL: SELECT s.id,s.aid,s.name,s.url,a.name as area FROM yxblog_college_school as s INNER JOIN yxblog_college_area as a on a.id=s.aid  WHERE s.id = '34005' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2018-03-07T12:02:44+08:00 ] 127.0.0.1 /Admin/Index/majorManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0045s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_major` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\CollegeController.class.php 第 49 行.
+SQL: SELECT m.id,m.name,s.name as school,l.name as level FROM yxblog_college_major as m INNER JOIN yxblog_college_school as s on s.id=m.sid INNER JOIN yxblog_college_level as l on l.id=m.lid  ORDER BY m.id DESC LIMIT 0,10   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_major` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined variable: major_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_college_major` LIMIT 1   [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_level` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`name` FROM `yxblog_college_level`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_area` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `yxblog_college_area`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\19f8332a70009437009aefebf0ce036d.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-03-07T12:02:51+08:00 ] 127.0.0.1 /Admin/index/trainStudentManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0053s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_student` [ RunTime:0.0059s ]
+SQL: SELECT s.id,s.name,s.sex,s.birth,s.phone,s.source,s.site,s.ramark,s.money,s.status,b.name as begins FROM yxblog_train_student as s INNER JOIN yxblog_train_begins as b on b.id=s.b_id  ORDER BY s.id DESC LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_student` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_train_student` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 27 行.
+NOTIC: [8] Undefined variable: article_list D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 61 行.
+NOTIC: [8] Undefined variable: article_list D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 61 行.
+NOTIC: [8] Undefined variable: article_list D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2018-03-07T12:02:53+08:00 ] 127.0.0.1 /Admin/index/trainCourseManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0099s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_course` [ RunTime:0.0115s ]
+SQL: SELECT `id`,`name`,`ramark` FROM `yxblog_train_course` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_train_course` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\c15a09d50f65d52c60f6b371b09428c1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-03-07T12:02:57+08:00 ] 127.0.0.1 /Admin/index/trainTeaManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0154s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_tea` [ RunTime:0.0179s ]
+SQL: SELECT `id`,`name`,`sex`,`phone`,`wechat`,`rank` FROM `yxblog_train_tea` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_train_tea` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\d1f5f1f3ef15c74529e6b711f6818cc5.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-03-07T12:02:58+08:00 ] 127.0.0.1 /Admin/index/trainRoomManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0080s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_room` [ RunTime:0.0086s ]
+SQL: SELECT `id`,`name`,`ramark` FROM `yxblog_train_room` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_train_room` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\357555dca2d20c01cb8b913da13a1507.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2018-03-07T12:03:00+08:00 ] 127.0.0.1 /Admin/index/trainBeginsManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0082s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_begins` [ RunTime:0.0079s ]
+SQL: SELECT b.id,b.start_time,b.name,b.ramark,c.name as course,t.name as tea,r.name as room FROM yxblog_train_begins as b INNER JOIN yxblog_train_course as c on c.id=b.c_id INNER JOIN yxblog_train_tea as t on t.id=b.t_id INNER JOIN yxblog_train_room as r on r.id=b.r_id  ORDER BY b.id DESC LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_begins` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_train_begins` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\fe29fa8d0af7e048736a0c2295f34be7.php 第 27 行.
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\fe29fa8d0af7e048736a0c2295f34be7.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-03-07T12:03:03+08:00 ] 127.0.0.1 /Admin/index/trainStudentManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0032s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_student` [ RunTime:0.0055s ]
+SQL: SELECT s.id,s.name,s.sex,s.birth,s.phone,s.source,s.site,s.ramark,s.money,s.status,b.name as begins FROM yxblog_train_student as s INNER JOIN yxblog_train_begins as b on b.id=s.b_id  ORDER BY s.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yxblog_train_student` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_train_student` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 27 行.
+NOTIC: [8] Undefined variable: article_list D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 61 行.
+NOTIC: [8] Undefined variable: article_list D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 61 行.
+NOTIC: [8] Undefined variable: article_list D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\bdd2c2267675214de06d66defdff3163.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-03-07T12:03:14+08:00 ] 127.0.0.1 /Admin/AdminUser/outLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\test\ThinkPHP\Common\functions.php 第 1264 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2018-03-07T12:03:14+08:00 ] 127.0.0.1 /Admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-03-07T12:03:14+08:00 ] 127.0.0.1 /Admin/index/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-03-07T12:06:59+08:00 ] 127.0.0.1 /Admin/AdminUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user` [ RunTime:0.0397s ]
+SQL: SELECT `id`,`user`,`pwd`,`user_name`,`exa_juris` FROM `yxblog_admin_user` WHERE `user` = 'admin' AND `pwd` = 'd6d12a105b099549452b21b54251908f' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0563s ]
+SQL: UPDATE `yxblog_admin_user_record` SET `session`='s33kpradn5iill63h1lb54vs91' WHERE `uid` = 1 [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2018-03-07T12:07:00+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0063s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=3 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=12 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=13 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=14 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=19 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=20 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=22 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=33 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=28 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=29 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=32 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=34 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=35 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=40 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=41 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=42 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=43 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=44 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yxblog_admin_menu` WHERE ( pid=45 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2018-03-07T12:07:01+08:00 ] 127.0.0.1 /Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0097s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Undefined index: HTTP_ACCERT D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\65a1f94348fbcf8ea0b7b04e37c32a89.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002786s ]
+
+[ 2018-03-07T12:07:05+08:00 ] 127.0.0.1 /Admin/index/indexMenuManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0170s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `yxblog_index_menu` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 0  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 2  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 3  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 4  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 5  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 9  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 6  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yxblog_index_menu` WHERE `pid` = 18  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: cid D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\9a69666de5d64509d574422618f6d290.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-03-07T12:07:08+08:00 ] 127.0.0.1 /Admin/Index/majorManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `yxblog_admin_user_record` [ RunTime:0.0031s ]
+SQL: SELECT `session` FROM `yxblog_admin_user_record` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_major` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined variable: data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\CollegeController.class.php 第 49 行.
+SQL: SELECT m.id,m.name,s.name as school,l.name as level FROM yxblog_college_major as m INNER JOIN yxblog_college_school as s on s.id=m.sid INNER JOIN yxblog_college_level as l on l.id=m.lid  ORDER BY m.id DESC LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_major` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: major_data D:\phpStudy\PHPTutorial\WWW\test\Application\Admin\Controller\IndexController.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yxblog_college_major` LIMIT 1   [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_level` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `yxblog_college_level`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yxblog_college_area` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `yxblog_college_area`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: current_url D:\phpStudy\PHPTutorial\WWW\test\Application\Runtime\Cache\Admin\19f8332a70009437009aefebf0ce036d.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+

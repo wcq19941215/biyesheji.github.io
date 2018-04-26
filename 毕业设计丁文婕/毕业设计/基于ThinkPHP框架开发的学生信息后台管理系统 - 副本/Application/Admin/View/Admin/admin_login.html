@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://www.thinkcmfx.com/index.php?g=admin&m=public&a=login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>资源邦-后台管理中心</title>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="robots" content="noindex,nofollow">
+		<link href="__PUBLIC__/admin/css/admin_login.css" rel="stylesheet">
+		
+	</head>
+<body style="margin: 0">
+<video id="example_video" loop="loop" preload="preload" height="auto" autoplay="" width="auto" style="position: absolute;right: 0;bottom: 0; margin: 0px; z-index: -1;min-width: 100%;min-height: 100%">
+                  <source src="__PUBLIC__/common/video/background.mp4" type='video/mp4' />
+                  <!-- <source src="http://oh31kniww.bkt.clouddn.com/eee.webm" type='video/webm' /> -->
+        </video>
+    <div style="position: absolute;right: 0;bottom: 0; margin: 0px; z-index: -1;min-width: 100%;min-height: 100%;">
+    </div>
+	<div class="wrap">
+	
+		<h1><a>资源邦</a></h1>
+
+		<form id="login" method="post" name="login" autocomplete="off" class="js-ajax-form" novalidate="novalidate">
+			<div class="login">
+				<ul>
+					<li class="has-error">
+						<input class="input error" id="js-admin-name" name="username" type="text" placeholder="用户名或邮箱" title="用户名或邮箱" value="" data-rule-required="true" data-msg-required="" aria-required="true" aria-invalid="true">
+					</li>
+					<li>
+						<input class="input" id="admin_pwd" type="password" name="password" placeholder="密码" title="密码" data-rule-required="true" data-msg-required="" aria-required="true">
+					</li>
+					<!-- <li>
+						<input class="input" id="admin_token" type="password" name="token" placeholder="密令" title="密令" data-rule-required="true" data-msg-required="" aria-required="true">
+					</li> -->
+					<li class="verifycode-wrapper">
+						<img id="verify_img" class="verify_img" src="{:U('Admin/index/getVerify')}" onclick="getVerify(this)" style="cursor: pointer;width:248px;height: 45px;" title="点击获取">
+					</li>
+					<li>
+						<input class="input" type="text" name="verify" placeholder="请输入验证码">
+					</li>
+					
+				</ul>
+				<div id="login_btn_wraper">
+					<button type="button" onclick="logins()" class="btn js-ajax-submit" data-loadingmsg="正在加载...">登录</button>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- 与首页的一样  重复加载 start -->
+    <include file="Assis:init_css"/>
+    <!-- 与首页的一样  重复加载 end -->
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('/Admin/index/adminUserManage')}">管理员管理</a></li>
+        <li><a href="{:U('/Admin/index/adminUserAdd')}">添加管理员</a></li>
+        <li class="active"><a href="javascript:;">管理员权限</a></li>
+    </ul>
+    <form name="form_data" action="{:U('/Admin/AdminUser/ajaxAdminUserExaJuris')}"
+          class="form-horizontal js-ajax-form" novalidate="novalidate">
+
+        <fieldset>
+            <div class="table_full">
+              <span>用户&nbsp;{$admin_user_info['user']}&nbsp;|&nbsp;{$admin_user_info['user_name']}&nbsp;权限设置</span>
+                <input type="hidden" name="uid" value="{$id}">
+                <table class="table table-bordered treeTable" id="authrule-tree">
+                    <tbody>
+                    <for start="0" end="count($admin_menu)">
+                        <tr id="node-1" style="" class="initialized parent expanded">
+                            <td style="padding-left:30px;">
+                              <if condition="count($admin_menu[$i]['one'])">
+                                <span class="add_sub" style='font-weight:bolder; cursor:pointer; display:inline-block; transform:rotate(-90deg)'>▼</span>
+                              <else/>
+                                <span class="add_sub" style='font-weight:bolder; cursor:pointer; display:inline-block; transform:rotate(-90deg);opacity: 0'>▼</span>
+                              </if>
+                                
+                             <if condition="in_array($admin_menu[$i]['id'],$admin_user_info['exa_juris'])">
+                                 <input type="checkbox" name="menuid[]" value="{$admin_menu[$i]['id']}" level="0" checked="" onclick="javascript:checknode(this);"> 
+                             <else/>
+                                 <input type="checkbox" name="menuid[]" value="{$admin_menu[$i]['id']}" level="0" onclick="javascript:checknode(this);"> 
+                             </if>
+                              {$admin_menu[$i]['menu_name']}
+                            </td>
+                        </tr>
+                        <for start="0" end="count($admin_menu[$i]['one'])" name="j">
+                            <tr id="node-2" class="child-of-node-1 initialized parent expanded index{$i}" style="">
+                                <td style="padding-left: 50px;">
+                                  <if condition="count($admin_menu[$i]['one'][$j]['sec'])">
+                                    <span class="add_sub{$i} command" style='font-weight:bolder; cursor:pointer; display:inline-block; transform:rotate(-90deg)'>▼</span>
+                                  <else/>
+                                     <span class="add_sub{$i}" style='font-weight:bolder; cursor:pointer; display:inline-block; transform:rotate(-90deg);opacity: 0'>▼</span>
+                                  </if>
+                                    
+                                  &nbsp;&nbsp;&nbsp;├─
+                                 <if condition="in_array($admin_menu[$i]['one'][$j]['id'],$admin_user_info['exa_juris'])">
+                                     <input type="checkbox" name="menuid[]" value="{$admin_menu[$i]['one'][$j]['id']}" level="1" checked="" onclick="javascript:checknode(this);">
+                                 <else/>
+                                     <input type="checkbox" name="menuid[]" value="{$admin_menu[$i]['one'][$j]['id']}" level="1" onclick="javascript:checknode(this);">
+                                 </if> 
+                                   {$admin_menu[$i]['one'][$j]['menu_name']}
+                                </td>
+                            </tr>
+                            <for start="0" end="count($admin_menu[$i]['one'][$j]['sec'])" name="o">
+                                <tr id="node-3" class="child-of-node-2 parent initialized sec{$i}{$j}" style="">
+                                    <td style="padding-left: 70px;">&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└─
+                                      <if condition="in_array($admin_menu[$i]['one'][$j]['sec'][$o]['id'],$admin_user_info['exa_juris'])">
+                                        <input type="checkbox" name="menuid[]" value="{$admin_menu[$i]['one'][$j]['sec'][$o]['id']}" level="2" checked="" onclick="javascript:checknode(this);">
+                                      <else/>
+                                        <input type="checkbox" name="menuid[]" value="{$admin_menu[$i]['one'][$j]['sec'][$o]['id']}" level="2" onclick="javascript:checknode(this);">
+                                      </if>
+                                        {$admin_menu[$i]['one'][$j]['sec'][$o]['menu_name']}
+                                    </td>
+                                </tr>
+                            </for>
+                        </for>
+                    </for>
+
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-actions">
+                <button type="button" onclick="adminUserInfo()" class="btn btn-primary  js-ajax-submit">添加</button>
+                <a class="btn" href="javascript:history.back(-1);">返回</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_admin.js"></script>
+<script type="text/javascript">
+    function checknode(obj) {
+        var chk = $("input[type='checkbox']");
+        var count = chk.length;
+        var num = chk.index(obj);
+        var level_top = level_bottom = chk.eq(num).attr('level');
+        for (var i = num; i >= 0; i--) {
+            var le = chk.eq(i).attr('level');
+            if (le < level_top) {
+                chk.eq(i).prop("checked", true);
+                var level_top = level_top - 1;
+            }
+        }
+        for (var j = num + 1; j < count; j++) {
+            var le = chk.eq(j).attr('level');
+            if (chk.eq(num).prop("checked")) {
+                if (le > level_bottom) {
+                    chk.eq(j).prop("checked", true);
+                }
+                else if (le == level_bottom) {
+                    break;
+                }
+            } else {
+                if (le > level_bottom) {
+                    chk.eq(j).prop("checked", false);
+                } else if (le == level_bottom) {
+                    break;
+                }
+            }
+        }
+    }
+
+
+    $('.child-of-node-1,.child-of-node-2').css({'display':'none'});
+    function toggleShow(name1,name2,name3){
+        $(name1).each(function(i){
+            var that=this;
+            $(this).on('click',function(){
+                if($(name2+i).css('display')=='none'){
+                    $(name2+i).show();
+                    $(that).css({'transform':'rotate(0deg)'});
+                }else{
+                    $(name2+i).hide();
+                    $(name3).hide();
+                    // $('.add_sub'+i).css({'transform':'rotate(-90deg)'});
+                    $(that).css({'transform':'rotate(-90deg)'});
+                }
+            });
+        });
+    }
+    $('.command').each(function(i){
+        console.log('.add_sub'+i,'.child-of-node-2.sec'+i);
+        toggleShow('.add_sub'+i,'.child-of-node-2.sec'+i);
+    });
+    toggleShow('.add_sub','.child-of-node-1.index','.child-of-node-2');
+
+
+    // $('.child-of-node-1').each(function(i){
+    //     var that=this;
+    //     $(this).on('click',function(){
+    //         if($(that).next().attr('id')=='node-3'){
+    //             if($(that).next().css('display')=='none'){
+    //                 $(that).next().show();
+    //             }else{
+    //                 $(that).next().hide();
+    //             }
+    //         }
+    //     });
+    // });
+
+
+    // $('.parent').on('click',function () {
+    //             toggle(this);
+    //         })
+      
+    //     function toggle(self) {
+    //         var id = $(self).attr('id').split('-')[1];
+    //         if($(self).hasClass('collapsed')){
+    //             $(self).removeClass('collapsed').addClass('expanded');
+    //             $('.child-of-node-' + id).css('display','table-row');
+    //             $(self).children('.parent').trigger('click');
+    //         }else{
+    //             $(self).removeClass('expanded').addClass('collapsed');
+    //             $('.child-of-node-' + id).css('display','none');
+    //             $(self).children('.parent').trigger('click');
+    //         }
+    //     }
+</script>
+</body>
+</html>

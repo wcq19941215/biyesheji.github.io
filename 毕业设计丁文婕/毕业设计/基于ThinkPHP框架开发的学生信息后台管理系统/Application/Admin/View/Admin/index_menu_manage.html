@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://www.thinkcmfx.com/index.php/Admin/Nav/index -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+
+	<include file="Assis:init_css"/>
+<style>
+  form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+  .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+  .table-list{margin-bottom: 0px;}
+</style>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<![endif]-->
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="{:U('/Admin/index/indexMenuManage')}">菜单管理</a></li>
+		  <php>$cid=$_POST['cid'];</php>
+		  <li><a href="{:U('/Admin/index/indexMenuAdd',array('cid'=>$cid))}">添加菜单</a></li>
+		</ul>
+
+		<form class="well form-search" id="mainform" action="" method="post">
+			<select id="navcid_select" name="cid">
+			  <for start="0" end="count($adv_menu)">
+			  	 <if condition="$adv_menu[$i]['id'] eq $cid">
+			  	 	<option value="{$adv_menu[$i]['id']}" selected="">{$adv_menu[$i]['menu_name']}</option>
+			  	 <else/>
+			  	    <option value="{$adv_menu[$i]['id']}">{$adv_menu[$i]['menu_name']}</option>
+			  	 </if>
+			  </for>
+			</select>
+		</form>
+		<form class="js-ajax-form" action="" method="post" novalidate="novalidate">
+			<div class="table-actions">
+				<button type="submit" class="btn btn-primary btn-small js-ajax-submit">排序</button>
+			</div>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="50">排序</th>
+						<th width="50">ID</th>
+						<th>菜单名称</th>
+						<th width="80">状态</th>
+						<th width="180">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				  <for start="0" end="count($index_menu_list)">
+				  	<tr>
+						<td>
+						  <input name="listorders[{$index_menu_list[$i]['id']}]" type="text" size="3" value="0" class="input input-order">
+						</td>
+						<td>{$index_menu_list[$i]["id"]}</td>
+						<td>{$index_menu_list[$i]["menu_name"]}</td>
+					    <td>显示</td>
+						<td>
+						  <a href='{:U("/Admin/index/indexMenuAdd",array("pid"=>$index_menu_list[$i]["id"]))}'>添加子菜单</a> | <a href='{:U("/Admin/index/indexMenuEdit",array("id"=>$index_menu_list[$i]["id"]))}'>编辑</a> | <a class="js-ajax-delete" href="#" onclick="delete_menu_list({$index_menu_list[$i]['id']},$(this))">删除</a>
+						</td>
+				    </tr>
+				  </for>
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<th width="50">排序</th>
+						<th width="50">ID</th>
+						<th>菜单名称</th>
+						<th width="80">状态</th>
+						<th width="180">操作</th>
+					</tr>
+				</tfoot>
+			</table>
+
+			<div class="table-actions">
+				<button type="submit" class="btn btn-primary btn-small js-ajax-submit">排序</button>
+			</div>
+		</form>
+	</div>
+<include file="Assis:init_js"/>	
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_menu.js"></script>
+</body>
+</html>

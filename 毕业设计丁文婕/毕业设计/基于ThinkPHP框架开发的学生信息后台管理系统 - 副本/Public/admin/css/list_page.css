@@ -1,0 +1,42 @@
+.wp-paginate {
+    padding:0;
+    margin:0 auto;
+    text-align: center;
+}
+.wp-paginate a {
+    margin:0 2px;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    display: inline-block;
+    min-height:20px;
+    min-width:20px;
+    color:#858585;
+    border:2px #e3e3e3 solid;
+    border-radius:13px;
+    font-size:11px;
+}
+.wp-paginate a:hover {
+    border:2px #858585 solid;
+    color:#858585;
+}
+
+.wp-paginate .current {
+    margin:0 2px;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    display: inline-block;
+    font-weight:700;
+    min-height:20px;
+    min-width:20px;
+    color:#262626;
+    border:2px #119eda solid;
+    border-radius:13px;
+    font-size:11px;
+    color:#119eda;
+}

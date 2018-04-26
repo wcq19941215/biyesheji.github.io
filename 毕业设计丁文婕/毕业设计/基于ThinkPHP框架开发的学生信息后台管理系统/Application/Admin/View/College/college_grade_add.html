@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+		.table-list{margin-bottom: 0px;}
+	</style>
+	<include file="Assis:init_css"/>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+		    <li><a href="{:U('/Admin/index/gradeManage')}" >分数管理</a></li>
+			<li class="active"><a href="{:U('/Admin/index/collegeGradeAdd')}" >添加分数</a></li>
+		</ul>
+		<form id="add_index_menu" name="edit_college" action="{:U('/Admin/College/ajaxAddGrade')}" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">地区</label>
+					<div class="controls">
+						<select name="aid" id="area" onclick="getSchool($(this).val())">
+							<option value="0" selected="">请选择地区</option>
+							<for start="0" end="count($area)">
+								<option value="{$area[$i]['id']}">{$area[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">学校</label>
+					<div class="controls">
+						<select name="sid" id="school" onclick="getMajor($(this).val(),$('#level').val())">
+							<option value="0" selected="">请选择学校</option>
+							<!-- <option value="3">erji</option> -->
+						</select>
+					</div>
+				</div>
+
+
+				<div class="control-group">
+					<label class="control-label">层次</label>
+					<div class="controls">
+						<select name="lid" id="level" onclick="getMajor($('#school').val(),$(this).val())">
+							<option value="0" selected="">请选择层次</option>
+							<for start="0" end="count($level)">
+								<option value="{$level[$i]['id']}">{$level[$i]['name']}</option>
+							</for>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="control-group">
+					<label class="control-label">专业</label>
+					<div class="controls">
+						<select name="mid" id="major">
+							<option value="0" selected="">请选择专业</option>
+							<!-- <option value="3">erji</option> -->
+						</select>
+					</div>
+				</div>
+
+
+				<div class="control-group">
+					<label class="control-label">年份</label>
+					<div class="controls">
+						<select name="year" id="year">
+						  <for start="0" end="count($year)">
+						  	<option value="{$year[$i]['name']}" selected="">{$year[$i]['name']}</option>
+
+						  </for>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="control-group">
+					<label class="control-label">分数</label>
+					<div class="controls">
+						<input type="text" name="code" id="outlink_input" class="valid" aria-invalid="false" placeholder="请输入分数...">
+						
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">计划数</label>
+					<div class="controls">
+						<input type="text" name="planum" id="planum" class="valid" aria-invalid="false" placeholder="请输入计划数...">
+						
+					</div>
+				</div>
+
+
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="button" onclick="editCollege()" class="btn btn-primary js-ajax-submit">添加</button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+
+		</form>
+	</div>
+
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_college.js"></script>
+</body>
+</html>

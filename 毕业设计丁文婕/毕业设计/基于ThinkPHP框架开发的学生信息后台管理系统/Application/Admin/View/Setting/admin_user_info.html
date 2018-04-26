@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+<!-- 时间控件 -->
+<link rel="stylesheet" href="__PUBLIC__/common/css/calendar.css">
+<style type="text/css">
+.calendar ul, .calendar ol, .calendar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<!-- 时间控件 -->
+</head>
+<body>
+<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('/Admin/index/AdminUserInfo')}" href="">修改信息</a></li>
+			<li><a href="{:U('/Admin/index/modiAdminPass')}">修改密码</a></li>
+		</ul>
+		<form name="form_data" action="{:U('/Admin/AdminUser/AdminUserInfo')}" class="form-horizontal js-ajax-form" novalidate="novalidate">
+			<fieldset>
+				<input type="hidden" name="uid" value="{$_SESSION['AdminUserInfo']['id']}">
+				<div class="control-group">
+					<label class="control-label" for="input-user_nicename"><span class="form-required">*</span>昵称</label>
+					<div class="controls">
+						<input type="text" name="user_name" value="{$_SESSION['AdminUserInfo']['user_name']}" required="" aria-required="true" class="valid" aria-invalid="false">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-user_nicename"><span class="form-required">*</span>电话</label>
+					<div class="controls">
+						<input type="text" name="phone" value="{$admin_user_info['phone']}" aria-required="true" class="valid" aria-invalid="false">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-user_nicename"><span class="form-required">*</span>邮箱</label>
+					<div class="controls">
+						<input type="text" name="email" value="{$admin_user_info['email']}" aria-required="true" class="valid" aria-invalid="false">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-birthday"><span class="form-required">*</span>生日</label>
+					<div class="controls">
+						<input class="js-date date" id="start_time" type="text" id="input-birthday" name="birth" aria-required="true" value="{:date('Y-m-d',$admin_user_info['birth'])}">
+                             <include file="Assis:start_times"/>
+					</div>
+				</div>
+				<!-- <div class="control-group">
+					<label class="control-label" for="input-user_url">个人网址</label>
+					<div class="controls">
+						<input type="text" id="input-user_url" placeholder="http://thinkcmf.com" name="user_url" value="">
+					</div>
+				</div> -->
+				<div class="form-actions">
+					<button type="button" onclick="adminUserInfo()" class="btn btn-primary js-ajax-submit">保存</button>
+				</div>
+			</fieldset>
+		</form>
+</div>
+<include file="Assis:init_js"/>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/ajaxpost_admin.js"></script>
+<!-- 时间控件 -->
+<script src="__PUBLIC__/common/js/calendar.js"></script>
+		<script>
+		    $('#ca').calendar({
+		        width: 320,
+		        height: 320,
+		        data: [
+					{
+					  date: '2015/12/24',
+					  value: 'Christmas Eve'
+					},
+					{
+					  date: '2015/12/25',
+					  value: 'Merry Christmas'
+					},
+					{
+					  date: '2016/01/01',
+					  value: 'Happy New Year'
+					}
+				],
+		    });
+            $('#start_times').calendar({
+		        trigger: '#start_time',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+		    });   
+		</script>
+<!-- 时间控件 -->
+</body>
+</html>

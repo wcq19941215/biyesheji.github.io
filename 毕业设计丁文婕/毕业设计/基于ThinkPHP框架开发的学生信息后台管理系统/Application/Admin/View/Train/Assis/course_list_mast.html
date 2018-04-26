@@ -1,0 +1,29 @@
+        <input id="current_url" type="hidden" name="current_url" value="{$current_url}" />
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+                <th width="50">ID</th>
+                <th width="100">课程名称</th>
+                <th width="150">备注</th>
+                
+                <th width="120">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <for start="0" end="count($data_list)">
+                <tr>
+                    <td>{$data_list[$i]['id']}</td>
+                    <td>{$data_list[$i]['name']}</td>
+                    <td>{$data_list[$i]['ramark']}</td>
+                    <td>
+                      <a href="javascript:;" onclick="del_leave_word({$data_list[$i]['id']},$(this),'{:U("/Admin/LeaveWord/ajaxDelLeaveWord")}')" class="js-ajax-delete">删除</a>
+                    </td>
+                </tr>
+            </for>
+
+            
+          </tbody>
+      </table> 
+      <div id="page" class="wp-paginate">
+                {$page}
+      </div>

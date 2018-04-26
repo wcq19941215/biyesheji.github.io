@@ -1,0 +1,44 @@
+        <input id="current_url" type="hidden" name="current_url" value="{$current_url}" />
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+                <th width="50">ID</th>
+                <th width="100">姓名</th>
+                <th width="150">邮箱</th>
+                <th style="min-width: 60px;">留言标题</th>
+                <th>留言内容</th>
+                <th width="120">留言时间</th>
+                <th width="50">状态</th>
+                <th width="120">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <for start="0" end="count($leave_word_list)">
+                <tr>
+                    <td>{$leave_word_list[$i]['id']}</td>
+                    <td></td>
+                    <td></td>
+                    <td>{$leave_word_list[$i]['title']}</td>
+                    <td>{$leave_word_list[$i]['content']}</td>
+                    <td>
+                      <php>echo date('Y-m-d H:i:s',$leave_word_list[$i]['datetime'])</php>
+                    </td>
+                    <td>
+                      <if condition="$leave_word_list[$i]['status'] eq 1">
+                        <a onclick="update_word_one({$leave_word_list[$i]['id']},'status',0)" data-toggle="tooltip" title="" data-original-title="已审核"><i class="fa fa-check"></i></a>
+                      <else/>
+                        <a onclick="update_word_one({$leave_word_list[$i]['id']},'status',1)" data-toggle="tooltip" title="" data-original-title="未审核"><i class="fa fa-close"></i></a>
+                      </if>
+                    </td>
+                    <td>
+                      <a href="javascript:;" onclick="del_leave_word({$leave_word_list[$i]['id']},$(this),'{:U("/Admin/LeaveWord/ajaxDelLeaveWord")}')" class="js-ajax-delete">删除</a>
+                    </td>
+                </tr>
+            </for>
+
+            
+          </tbody>
+      </table> 
+      <div id="page" class="wp-paginate">
+                {$page}
+      </div>

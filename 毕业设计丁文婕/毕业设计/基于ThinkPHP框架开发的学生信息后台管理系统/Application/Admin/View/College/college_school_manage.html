@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 与首页的一样  重复加载 start -->
+<include file="Assis:init_css"/>
+<!-- 与首页的一样  重复加载 end -->
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list_page.css"/>
+<!-- 分页样式 -->
+<include file="Assis:init_js"/>
+
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="{:U('/Admin/index/schoolManage')}" >学校管理</a></li>
+		<li><a href="{:U('/Admin/index/collegeSchoolAdd')}" >添加学校</a></li>
+	</ul>
+		
+	<form name="sel_college" class="well form-search" action="{:U('/Admin/index/schoolManage')}" method="post">
+	    地区： 
+		<select name="aid" style="width: 200px;">
+			<option value="0">全部</option>
+		   <for start="0" end="count($area)">
+		   	<option value="{$area[$i]['id']}">{$area[$i]['name']}</option>
+		   </for>
+			
+		</select>
+        
+		 &nbsp; &nbsp;
+		学校： 
+		<input type="text" name="name" style="width: 200px;" value="" placeholder="请输入学校名字...">
+		<input type="button" onclick="sel_college_list()" class="btn btn-primary" value="搜索">
+		<input type="reset" class="btn btn-danger" value="清空">
+	</form>
+		
+	<form name="college_list" class="js-ajax-form" novalidate="novalidate">
+		<include file="College:Assis/school_list_mast"/>
+	</form>
+</div>
+
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/ajaxpost_college.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+            <table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>用户名</th>
+						<th>昵称</th>
+						<th>头像</th>
+						<th>邮箱</th>
+						<th>注册时间</th>
+						<th>最后登录时间</th>
+						<th>最后登录IP</th>
+						<th>状态</th>
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				  <php>$status=array('未激活','正常','已拉黑')</php>
+				  <for start="0" end="count($index_user_list)">
+				  	<tr>
+						<td align="center">{$index_user_list[$i]["id"]}</td>
+						<td>{$index_user_list[$i]["user"]}</td>
+						<td>{$index_user_list[$i]["pet_name"]}</td>
+						<td><img width="25" height="25" src="{$index_user_list[$i]['portrait']}"></td>
+						<td>{$index_user_list[$i]["email"]}</td>
+						<td><php>echo date('Y-m-d H:i:s',$index_user_list[$i]['regi_time']);</php></td>
+						<td><php>echo date('Y-m-d H:i:s',$index_user_list[$i]['login_time']);</php></td>
+						<td>{$index_user_list[$i]["login_id"]}</td>
+						<td>{$status[$index_user_list[$i]["status"]]}</td>
+						<td align="center">
+						<a style="color: #ccc;">拉黑</a>|
+						<a style="color: #ccc;">启用</a></td>
+					</tr>
+				  </for>
+								
+				</tbody>
+			</table>
+		        <div id="page" class="wp-paginate">
+             	   {$page}
+                </div>
